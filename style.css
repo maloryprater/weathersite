@@ -1,8 +1,2195 @@
 body{
     padding: 0;
     margin: 0;
-    background-color: black;
+    background-color: #C6E1FF;
     font-family: 'dosis-light';
-    color: white;
+   
+}
+
+
+.top {
+    display: grid;
+    grid-template-columns: 1fr .5fr .5fr;
+    grid-gap: 5px;
+    height: 10vh;
+    background-color: rgb(250, 213, 7);
+    background-image: linear-gradient(rgb(250, 213, 7), white);
+    padding: 5px;
+    margin-bottom: 3vh;
+    position: fixed;
     width: 100vw;
 }
+
+
+
+input {
+    display: block;
+    background-color: white;
+    color: black;
+    border: #0E2953 solid 5px;
+    font-size: 30px;
+    position: fixed;
+    margin-left: 65vw;
+    margin-top: 2vh;
+  }
+
+
+
+.location {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    background-color: #0E2953;
+    height: 90vh;
+  
+}
+
+
+.weather-station {
+    height: 28vh;
+    background-color: #3c6fdf;
+    margin-left: 5vw;
+    margin-right: 3vw;
+    margin-top: 20vh;
+  
+}
+
+.middle {
+    display: grid;
+    grid-template-rows: .5fr .2fr .5fr;
+    background-color: #0E2953;
+    height: 70vh;
+    margin-top: 15vh;
+}
+
+.current-temp {
+    background-color: #3c6fdf;
+    background-image: linear-gradient(30deg,#3c6fdf, white, #f5eb63);
+    height: 65vh;
+    margin-bottom: 30vh;
+    margin-left: 4vw;
+    margin-right: 4vw;
+    margin-top: 16vh;
+}
+
+
+h1 {
+    font-size: 55px;
+    font-family: 'oxanium';
+    text-align: left;
+    color: #0E2953;
+    padding: 15px;
+    margin-top: -1vh;
+    margin-bottom: 1vh;
+    po
+
+}
+
+h2 {
+    font-size: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #C6E1FF;
+    text-align: center;
+}
+
+h3 {
+    font-size: 40px;
+    font-family: 'oxanium';
+    text-align: center;
+    color: #C6E1FF;
+    margin-top: 1vh;
+    border: #C6E1FF solid;
+    height: 6.5vh;
+}
+
+h4 {
+    font-size: 30px;
+    font-family: 'oxanium';
+    text-align: center;
+    color: #C6E1FF;
+    margin-top: -7vh;
+}
+
+h9 {
+    font-size: 50px;
+    font-family: 'oxanium';
+    text-align: center;
+    color: #C6E1FF;
+    margin-top: -17vh;
+}
+
+h5 {
+    font-size: 35px;
+    font-family: 'oxanium';
+    text-align: center;
+    color: black;
+    margin-top: 1vh;
+}
+
+h6 {
+    font-size: 100px;
+    font-family: 'oxanium';
+    text-align: center;
+    color: black;
+    margin-top: -5vh;
+    margin-bottom: -7vh;
+}
+
+
+h7 {
+    font-size: 45px;
+    font-family: 'oxanium';
+    text-align: center;
+    color: black;
+    margin-left: 2vw;
+}
+
+.high-low {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    background-color: 0E2953;
+    height: 25vh;
+}
+
+
+h10 {
+    color: #C6E1FF;
+    border: #C6E1FF solid;
+    font-size: 20px;
+    font-family: 'oxanium';
+    text-align: center;
+    margin-top: 1.1vh;
+    margin-left: 6vw;
+    height: 9vh;
+}
+
+h11 {
+    color: #C6E1FF;
+    font-size: 50px;
+    font-family: 'oxanium';
+    margin-top: -9vh;
+    padding-bottom: 3vh;
+    padding-right: 2.5vw;
+    margin-left: 2vw;
+    
+    
+}
+
+h12 {
+    color: #C6E1FF;
+    border: #C6E1FF solid;
+    font-size: 20px;
+    font-family: 'oxanium';
+    text-align: center;
+    margin-top: -2vh;
+    margin-left: 6vw;
+    height: 9vh;
+}
+    
+h13 {
+    color: #C6E1FF;
+    font-size: 50px;
+    font-family: 'oxanium';
+    padding-top: 3vh;
+    padding-bottom: -4vh;
+    padding-right: 2.5vw;
+    margin-left: 2vw;
+    margin-top: -15vh;
+}
+
+h14 {
+    color: black;
+    font-size: 30px;
+    font-family: 'oxanium';
+    text-align: center;
+    margin-left: 30vw;
+}
+
+
+
+
+
+.hourly-times {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 2fr 1fr;
+    background-color: #3c6fdf;
+    height: 30vh;
+    grid-gap: 15px;
+    padding: 30px;
+    padding-left: 100px;
+    padding-right: 100px;
+
+}
+
+.hourly-temps {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 2fr 1fr;
+    background-color: #3c6fdf;
+    background-color: ;
+    height: 30vh;
+    grid-gap: 15px;
+    padding: 30px;
+    padding-bottom: 9vh;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-top: -32vh;
+    
+   
+}
+
+
+
+h15 {
+    color: #0E2953;
+    font-size: 30px;
+    font-family: 'oxanium';
+    text-align: center;
+    border: #0E2953 solid;
+    margin-bottom: 30vh;
+}
+
+
+h16 {
+    color: #0E2953;
+    font-size: 60px;
+    font-family: 'oxanium';
+    text-align: center;
+    padding-top: 40px;
+    margin-left: -5vw;
+    
+}
+
+
+
+
+img {
+    margin-left: 4vw;
+    height: 18vh;
+    width: 18vw;
+    margin-top: 3vh;
+  }
+
+.icon1 {
+    width: 4vw;
+    height: 4vw;
+    margin-left: 3vw;
+}
+
+.icon2 {
+    width: 4vw;
+    height: 4vw;
+    margin-left: 3vw;
+}
+
+.icon3 {
+    width: 6vw;
+    height: 6vh;
+    margin-left: 3vw;
+}
+
+.icon4 {
+    width: 6vw;
+    height: 5vw;
+    margin-left: 3vw;
+}
+
+.icon5 {
+    width: 6vw;
+    height: 6vw;
+    margin-left: 3vw;
+}
+
+.icon6 {
+    width: 4vw;
+    height: 4vw;
+    margin-left: 3vw;
+}
+
+.icon7 {
+    width: 6vw;
+    height: 4vw;
+    margin-left: 3vw;
+}
+
+.temps {
+    display: grid;
+    grid-template-columns: .5fr .5fr .5fr .5fr .5fr .5fr .5fr;
+    background-color: #3c6fdf;
+    height: 20vh;
+    width: 86vw;
+    margin-top: -28vh;
+    margin-left: 9vw;
+   
+    
+}
+
+.rise-set {
+    background-color: #3c6fdf;
+    height: 40vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+    padding-top: 50px;
+    padding-right: 350px;
+    padding-left: 350px;
+}
+
+
+
+.rise-set-time {
+    background-color: #3c6fdf;
+    height: 40vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+   
+
+}
+
+h20 {
+    color: #0E2953;
+    font-size: 40px;
+    font-family: 'oxanium';
+    text-align: center;
+    margin-left: 27vw;
+    margin-top: -12vh;
+    border: #0E2953 solid;
+    margin-bottom: 60vh;
+    width: 15vw;
+}
+
+h21 {
+    color: #0E2953;
+    font-size: 40px;
+    font-family: 'oxanium';
+    text-align: center;
+    margin-left: 5vw;
+    margin-top: -12vh;
+    margin-bottom: 60vh;
+    border: #0E2953 solid;
+    width: 15vw;
+    
+}
+
+.icon8 {
+    width: 15vw;
+    height: 11.5vw;
+    margin-top: 1.5vh;
+}
+
+.icon9 {
+    width: 15vw;
+    height: 15vw;
+    margin-top: 1vh;
+}
+
+.future-weather {
+    background-color: #C6E1FF;
+    height: 60vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: -37vh;
+    grid-gap: 25px;
+    padding: 35px;
+    margin-bottom: -50vh;
+}
+
+.tonight {
+    background-color: #0E2953;
+    height: 40vh;
+   
+    
+}
+
+.tomorrow {
+    background-color: #0E2953;
+    height: 40vh;
+   
+}
+
+.tomorrow-night {
+    background-color: #0E2953;
+    height: 40vh;
+   
+}
+
+.icon10 {
+    height: 12vh;
+    width: 12vh;
+    margin-top: -80vh;
+    margin-right: 21vw;
+    
+
+ 
+}
+
+.icon11 {
+    height: 12vh;
+    width: 12vh;
+    margin-top: -49vh;
+    margin-right: 22vw;
+   
+}
+
+.icon12 {
+    height: 12vh;
+    width: 12vh;
+    margin-top: -49vh;
+    margin-left: 2vw;
+}
+
+.words {
+    background-color: #C6E1FF;
+    height: 60vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: -37vh;
+    grid-gap: 25px;
+    padding: 35px;
+    margin-bottom: -70vh;
+}
+
+
+    
+    
+
+
+h22 {
+    color: #C6E1FF;
+    font-size: 30px;
+    font-family: 'oxanium';
+    text-align: center;
+    margin-right: -8vw;
+    margin-top: -17vh;
+    
+}
+
+h23 {
+    color: #C6E1FF;
+    font-size: 20px;
+    font-family: 'oxanium';
+    text-align: left;
+    margin-left: 12vw;
+    margin-top: -33vh;
+    
+}
+
+h24 {
+    color: #C6E1FF;
+    font-size: 22px;
+    font-family: 'oxanium';
+    text-align: left;
+    margin-left: 3vw;
+    margin-top: -40vh;
+    
+}
+
+h25 {
+    color: #C6E1FF;
+    font-size: 22px;
+    font-family: 'oxanium';
+    text-align: left;
+    margin-left: 3vw;
+    margin-top: -40vh;
+    
+}
+
+h26 {
+    color: #C6E1FF;
+    font-size: 22px;
+    font-family: 'oxanium';
+    text-align: left;
+    margin-left: 3vw;
+    margin-top: -40vh;
+    
+}
+
+.radar {
+    background-color: #C6E1FF;
+    height: 60vh;
+    margin-top: 30vh;
+    
+   
+}
+
+.icon13 {
+    height: 50vh;
+    width: 60vw;
+    margin-left: 20vw;
+    
+}
+
+.extra {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-color: #C6E1FF;
+    height: 60vh;
+    grid-gap: 25px;
+    padding: 30px;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    margin-bottom: -45vh;
+   
+}
+
+.humidity {
+    background-color: rgb(250, 213, 7);
+    height: 25vh;
+    border: #0E2953 solid;
+}
+
+.wind {
+    background-color: rgb(250, 213, 7);
+    height: 25vh;
+    border: #0E2953 solid;
+}
+
+.precipitation {
+    background-color: rgb(250, 213, 7);
+    height: 25vh;
+    border: #0E2953 solid;
+}
+
+.pressure {
+    background-color: rgb(250, 213, 7);
+    height: 25vh;
+    border: #0E2953 solid;
+}
+
+.second-line {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-color: #C6E1FF;
+    height: 60vh;
+    grid-gap: 25px;
+    padding: 30px;
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+.visibility {
+    background-color: rgb(250, 213, 7);
+    height: 25vh;
+    border: #0E2953 solid;
+}
+
+.uv {
+    background-color: rgb(250, 213, 7);
+    height: 25vh;
+    border: #0E2953 solid;
+}
+
+.air-index {
+    background-color: rgb(250, 213, 7);
+    height: 25vh;
+    border: #0E2953 solid;
+}
+
+.air {
+    background-color: rgb(250, 213, 7);
+    height: 25vh;
+    border: #0E2953 solid;
+}
+
+.data {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-color: #C6E1FF;
+    height: .1vh;
+    grid-gap: 25px;
+    padding: 30px;
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+
+h27 {
+    color: black;
+    font-size: 30px;
+    font-family: 'oxanium';
+    text-align: center;
+    margin-top: -20vh;
+   
+    
+}
+
+h28 {
+    color: black;
+    font-size: 70px;
+    font-family: 'oxanium';
+    text-align: center;
+    margin-top: -17vh;
+}
+
+h29 {
+    color: black;
+    font-size: 50px;
+    font-family: 'oxanium';
+    text-align: center;
+    margin-top: -17vh;
+}
+
+h30 {
+    color: black;
+    font-size: 70px;
+    font-family: 'oxanium';
+    text-align: center;
+    margin-top: -17vh;
+}
+
+h31 {
+    color: black;
+    font-size: 50px;
+    font-family: 'oxanium';
+    text-align: center;
+    margin-top: -17vh;
+}
+
+.second-data {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-color: #C6E1FF;
+    height: .1vh;
+    grid-gap: 25px;
+    padding: 30px;
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+h32 {
+    color: black;
+    font-size: 30px;
+    font-family: 'oxanium';
+    text-align: center;
+    margin-top: -66vh;
+    
+}
+
+h33 {
+    color: black;
+    font-size: 70px;
+    font-family: 'oxanium';
+    text-align: center;
+    margin-top: -60vh;
+    
+}
+
+h34 {
+    color: black;
+    font-size: 70px;
+    font-family: 'oxanium';
+    text-align: center;
+    margin-top: -60vh;
+   
+    
+}
+
+h35 {
+    color: black;
+    font-size: 70px;
+    font-family: 'oxanium';
+    text-align: center;
+    margin-top: -60vh;
+   
+    
+}
+
+h36 {
+    color: black;
+    font-size: 70px;
+    font-family: 'oxanium';
+    text-align: center;
+    margin-top: -60vh;
+   
+    
+}
+
+
+
+
+
+
+
+
+/* ----------- SMART PHONES ----------- */
+ 
+ 
+@media only screen and (max-width: 800px) {
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    body{
+        padding: 0;
+        margin: 0;
+        background-color: black;
+        font-family: 'dosis-light';
+        
+    }
+    
+    
+    .top {
+        display: grid;
+        grid-template-columns: 1fr .5fr .5fr;
+        grid-gap: 5px;
+        height: 8vh;
+        background-color: rgb(250, 213, 7);
+        background-image: linear-gradient(rgb(250, 213, 7), white);
+        padding: 5px;
+        margin-bottom: 3vh;
+        position: fixed;
+        
+        
+    }
+    
+    
+    
+    input {
+        display: block;
+        background-color: white;
+        color: black;
+        border: #0E2953 solid 5px;
+        font-size: 30px;
+        height: 2vh;
+        margin-left: 55vw;
+        margin-top: 2vh;
+        position: fixed;
+      }
+    
+    
+    
+    .location {
+        display: grid;
+        grid-template-columns: 2fr 2fr 2fr;
+        background-color: #0E2953;
+        height: 70vh;
+      
+    }
+    
+    
+    .weather-station {
+        height: 12vh;
+        background-color: #3c6fdf;
+        margin-left: 5vw;
+        margin-right: 3vw;
+        margin-top: 20vh;
+      
+    }
+    
+    .middle {
+        display: grid;
+        grid-template-rows: .5fr .2fr .5fr;
+        background-color: #0E2953;
+        height: 55vh;
+        margin-top: 15vh;
+        
+    }
+    
+    .current-temp {
+        background-color: #3c6fdf;
+        background-image: linear-gradient(30deg,#3c6fdf, white, #f5eb63);
+        height: 30vh;
+        margin-bottom: 30vh;
+        margin-left: 4vw;
+        margin-right: 4vw;
+        margin-top: 16vh;
+    }
+    
+    
+    h1 {
+        font-size: 55px;
+        font-family: 'oxanium';
+        text-align: left;
+        color: #0E2953;
+        padding: 15px;
+        margin-top: 1vh;
+        margin-bottom: 1vh;
+        po
+    
+    }
+    
+    h2 {
+        font-size: 40px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color: #C6E1FF;
+        text-align: center;
+    }
+    
+    h3 {
+        font-size: 40px;
+        font-family: 'oxanium';
+        text-align: center;
+        color: #C6E1FF;
+        margin-top: -4vh;
+        border: #C6E1FF solid;
+        height: 6.5vh;
+    }
+    
+    h4 {
+        font-size: 30px;
+        font-family: 'oxanium';
+        text-align: center;
+        color: #C6E1FF;
+        margin-top: -16vh;
+    }
+    
+    h9 {
+        font-size: 50px;
+        font-family: 'oxanium';
+        text-align: center;
+        color: #C6E1FF;
+        margin-top: -25vh;
+        margin-bottom: -12vh;
+    }
+    
+    h5 {
+        font-size: 35px;
+        font-family: 'oxanium';
+        text-align: center;
+        color: black;
+        margin-top: 1vh;
+    }
+    
+    h6 {
+        font-size: 100px;
+        font-family: 'oxanium';
+        text-align: center;
+        color: black;
+        margin-top: -2vh;
+        margin-bottom: -7vh;
+    }
+    
+    
+    h7 {
+        font-size: 25px;
+        font-family: 'oxanium';
+        text-align: center;
+        color: black;
+        margin-left: 1vw;
+    
+       
+    }
+    
+    .high-low {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        background-color: #0E2953;
+        height: 20.6vh;
+        margin-top: -12vh;
+        
+        
+    }
+    
+    
+    h10 {
+        color: #C6E1FF;
+        border: #C6E1FF solid;
+        font-size: 30px;
+        font-family: 'oxanium';
+        text-align: center;
+        margin-top: -1vh;
+        margin-left: 6vw;
+        height: 9vh;
+    }
+    
+    h11 {
+        color: #C6E1FF;
+        font-size: 50px;
+        font-family: 'oxanium';
+        margin-bottom: 19vh;
+        padding-bottom: 3vh;
+        padding-right: 2.5vw;
+        margin-left: 2vw;
+        
+        
+    }
+    
+    h12 {
+        color: #C6E1FF;
+        border: #C6E1FF solid;
+        font-size: 30px;
+        font-family: 'oxanium';
+        text-align: center;
+        margin-top: -2vh;
+        margin-left: 6vw;
+        height: 9vh;
+    }
+        
+    h13 {
+        color: #C6E1FF;
+        font-size: 50px;
+        font-family: 'oxanium';
+        padding-top: 3vh;
+        padding-bottom: -4vh;
+        padding-right: 2.5vw;
+        margin-left: 2vw;
+        margin-top: -15vh;
+    }
+    
+    h14 {
+        color: black;
+        font-size: 30px;
+        font-family: 'oxanium';
+        text-align: center;
+        margin-left: 30vw;
+    }
+    
+    
+    
+    
+    
+    .hourly-times {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 2fr 1fr;
+        background-color: #3c6fdf;
+        height: 30vh;
+        grid-gap: 15px;
+        padding: 30px;
+        padding-left: 100px;
+        padding-right: 100px;
+    
+    }
+    
+    .hourly-temps {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 2fr 1fr;
+        background-color: #3c6fdf;
+        background-color: ;
+        height: 30vh;
+        grid-gap: 15px;
+        padding: 30px;
+        padding-bottom: 9vh;
+        padding-left: 100px;
+        padding-right: 100px;
+        margin-top: -32vh;
+        
+       
+    }
+    
+    
+    
+    h15 {
+        color: #0E2953;
+        font-size: 30px;
+        font-family: 'oxanium';
+        text-align: center;
+        border: #0E2953 solid;
+        margin-bottom: 30vh;
+    }
+    
+    
+    h16 {
+        color: #0E2953;
+        font-size: 60px;
+        font-family: 'oxanium';
+        text-align: center;
+        padding-top: 40px;
+        margin-left: -5vw;
+        
+    }
+    
+    
+    
+    
+    img {
+        margin-left: 4vw;
+        height: 6vh;
+        width: 16vw;
+        margin-top: 8vh;
+        margin-right: -17vw;
+        margin-bottom: 4.5vh;
+      }
+    
+    .icon1 {
+        width: 8vw;
+        height: 8vw;
+        margin-left: -1vw;
+        margin-top: 4vh;
+    }
+    
+    .icon2 {
+        width: 8vw;
+        height: 8vw;
+        margin-left: .1vw;
+        margin-top: 4vh;
+    }
+    
+    .icon3 {
+        width: 11vw;
+        height: 7vw;
+        margin-left: .5vw;
+        margin-top: 4vh;
+    }
+    
+    .icon4 {
+        width: 11vw;
+        height: 9vw;
+        margin-left: .5vw;
+        margin-top: 4vh;
+    }
+    
+    .icon5 {
+        width: 11vw;
+        height: 12vw;
+        margin-left: .5vw;
+        margin-top: 4vh;
+    }
+    
+    .icon6 {
+        width: 8vw;
+        height: 5vw;
+        margin-left: 2vw;
+        margin-top: 5vh;
+    }
+    
+    .icon7 {
+        width: 11vw;
+        height: 7vw;
+        margin-left: .5vw;
+        margin-top: 4vh;
+    }
+    
+    .temps {
+        display: grid;
+        grid-template-columns: .5fr .5fr .5fr .5fr .5fr .5fr .5fr;
+        background-color: #3c6fdf;
+        height: 20vh;
+        width: 86vw;
+        margin-top: -28vh;
+        margin-left: 10vw;
+       
+        
+    }
+    
+    .rise-set {
+        background-color: #3c6fdf;
+        height: 40vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 50px;
+        padding-top: 50px;
+        padding-right: 350px;
+        padding-left: 350px;
+    }
+    
+    
+    
+    .rise-set-time {
+        background-color: #3c6fdf;
+        height: 12vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+       
+    
+    }
+    
+    h20 {
+        color: #0E2953;
+        font-size: 40px;
+        font-family: 'oxanium';
+        text-align: center;
+        margin-left: 30vw;
+        margin-top: -32vh;
+        border: #0E2953 solid;
+        margin-bottom: 82vh;
+        width: 15vw;
+    }
+    
+    h21 {
+        color: #0E2953;
+        font-size: 40px;
+        font-family: 'oxanium';
+        text-align: center;
+        margin-left: 6vw;
+        margin-top: -32vh;
+        margin-bottom: 82vh;
+        border: #0E2953 solid;
+        width: 15vw;
+        
+    }
+    
+    .icon8 {
+        width: 15vw;
+        height: 11.5vw;
+        margin-top: -7vh;
+        margin-left: -5vw;
+    }
+    
+    .icon9 {
+        width: 15vw;
+        height: 15vw;
+        margin-top: -6.5vh;
+    }
+    
+    .future-weather {
+        background-color: #C6E1FF;
+        height: 60vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-top: -37vh;
+        grid-gap: 25px;
+        padding: 35px;
+        margin-bottom: -50vh;
+    }
+    
+    .tonight {
+        background-color: #0E2953;
+        height: 40vh;
+       
+        
+    }
+    
+    .tomorrow {
+        background-color: #0E2953;
+        height: 40vh;
+       
+    }
+    
+    .tomorrow-night {
+        background-color: #0E2953;
+        height: 40vh;
+       
+    }
+    
+    .icon10 {
+        height: 5vh;
+        width: 5vh;
+        margin-top: -6vh;
+        margin-left: 5vw;
+        
+    
+     
+    }
+    
+    .icon11 {
+        height: 5vh;
+        width: 5vh;
+        margin-top: -6vh;
+        margin-left: 41vw;
+       
+    }
+    
+    .icon12 {
+        height: 5vh;
+        width: 5vh;
+        margin-top: -3vh;
+        margin-left: 40vw;
+    }
+    
+    .words {
+        background-color: #C6E1FF;
+        height: 60vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-top: -37vh;
+        grid-gap: 25px;
+        padding: 35px;
+        margin-bottom: -70vh;
+    }
+    
+    
+        
+        
+    
+    
+    h22 {
+        color: #C6E1FF;
+        font-size: 28px;
+        font-family: 'oxanium';
+        text-align: center;
+        margin-right: -2vw;
+        margin-top: -13.5vh;
+        
+    }
+    
+    h23 {
+        color: #C6E1FF;
+        font-size: 20px;
+        font-family: 'oxanium';
+        text-align: left;
+        margin-left: 12vw;
+        margin-top: -29vh;
+        
+    }
+    
+    h24 {
+        color: #C6E1FF;
+        font-size: 22px;
+        font-family: 'oxanium';
+        text-align: left;
+        margin-left: 3vw;
+        margin-top: -41vh;
+        
+    }
+    
+    h25 {
+        color: #C6E1FF;
+        font-size: 22px;
+        font-family: 'oxanium';
+        text-align: left;
+        margin-left: 3vw;
+        margin-top: -41vh;
+        
+    }
+    
+    h26 {
+        color: #C6E1FF;
+        font-size: 22px;
+        font-family: 'oxanium';
+        text-align: left;
+        margin-left: 3vw;
+        margin-top: -41vh;
+        
+    }
+    
+    .radar {
+        background-color: #C6E1FF;
+        height: 40vh;
+        margin-top: 25vh;
+        
+       
+    }
+    
+    .icon13 {
+        height: 27vh;
+        width: 80vw;
+        margin-left: 10vw;
+        
+    }
+    
+    .extra {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        background-color: #C6E1FF;
+        height: 60vh;
+        grid-gap: 25px;
+        padding: 30px;
+        padding-left: 10vw;
+        padding-right: 10vw;
+        margin-bottom: -45vh;
+        margin-top: -2vh;
+    }
+    
+    .humidity {
+        background-color: rgb(250, 213, 7);
+        height: 10vh;
+        border: #0E2953 solid;
+       
+    
+    }
+    
+    .wind {
+        background-color: rgb(250, 213, 7);
+        height: 10vh;
+        border: #0E2953 solid;
+    }
+    
+    .precipitation {
+        background-color: rgb(250, 213, 7);
+        height: 10vh;
+        border: #0E2953 solid;
+    }
+    
+    .pressure {
+        background-color: rgb(250, 213, 7);
+        height: 10vh;
+        border: #0E2953 solid;
+    }
+    
+    .second-line {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        background-color: #C6E1FF;
+        height: 60vh;
+        grid-gap: 25px;
+        padding: 30px;
+        padding-left: 10vw;
+        padding-right: 10vw;
+        margin-top: -8vh;
+    }
+    
+    .visibility {
+        background-color: rgb(250, 213, 7);
+        height: 10vh;
+        border: #0E2953 solid;
+    }
+    
+    .uv {
+        background-color: rgb(250, 213, 7);
+        height: 10vh;
+        border: #0E2953 solid;
+    }
+    
+    .air-index {
+        background-color: rgb(250, 213, 7);
+        height: 10vh;
+        border: #0E2953 solid;
+    }
+    
+    .air {
+        background-color: rgb(250, 213, 7);
+        height: 10vh;
+        border: #0E2953 solid;
+    }
+    
+    .data {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        background-color: #C6E1FF;
+        height: .1vh;
+        grid-gap: 25px;
+        padding: 30px;
+        padding-left: 10vw;
+        padding-right: 10vw;
+    }
+    
+    
+    h27 {
+        color: black;
+        font-size: 26px;
+        font-family: 'oxanium';
+        text-align: center;
+        margin-top: -18vh;
+       
+        
+    }
+    
+    h28 {
+        color: black;
+        font-size: 60px;
+        font-family: 'oxanium';
+        text-align: center;
+        margin-top: -17vh;
+    }
+    
+    h29 {
+        color: black;
+        font-size: 50px;
+        font-family: 'oxanium';
+        text-align: center;
+        margin-top: -17vh;
+    }
+    
+    h30 {
+        color: black;
+        font-size: 60px;
+        font-family: 'oxanium';
+        text-align: center;
+        margin-top: -17vh;
+    }
+    
+    h31 {
+        color: black;
+        font-size: 50px;
+        font-family: 'oxanium';
+        text-align: center;
+        margin-top: -17vh;
+    }
+    
+    .second-data {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        background-color: #C6E1FF;
+        height: .1vh;
+        grid-gap: 25px;
+        padding: 30px;
+        padding-left: 10vw;
+        padding-right: 10vw;
+    }
+    
+    h32 {
+        color: black;
+        font-size: 26px;
+        font-family: 'oxanium';
+        text-align: center;
+        margin-top: -63vh;
+        
+    }
+    
+    h33 {
+        color: black;
+        font-size: 50px;
+        font-family: 'oxanium';
+        text-align: center;
+        margin-top: -60vh;
+        
+    }
+    
+    h34 {
+        color: black;
+        font-size: 60px;
+        font-family: 'oxanium';
+        text-align: center;
+        margin-top: -60vh;
+       
+        
+    }
+    
+    h35 {
+        color: black;
+        font-size: 60px;
+        font-family: 'oxanium';
+        text-align: center;
+        margin-top: -60vh;
+       
+        
+    }
+    
+    h36 {
+        color: black;
+        font-size: 60px;
+        font-family: 'oxanium';
+        text-align: center;
+        margin-top: -60vh;
+       
+        
+    }
+
+
+
+
+
+    /* ----------- TABLETS ----------- */
+ 
+@media only screen and (min-width: 800px) and (max-width: 1280px) {
+    
+    
+    
+    
+    
+
+    body{
+        padding: 0;
+        margin: 0;
+        background-color: grey;
+        font-family: 'dosis-light';
+        
+    }
+    
+    
+    .top {
+        display: grid;
+        grid-template-columns: 1fr .5fr .5fr;
+        grid-gap: 5px;
+        height: 8vh;
+        background-color: rgb(250, 213, 7);
+        background-image: linear-gradient(rgb(250, 213, 7), white);
+        padding: 5px;
+        margin-bottom: 3vh;
+        position: fixed;
+        
+        
+    }
+    
+    
+    
+    input {
+        display: block;
+        background-color: white;
+        color: black;
+        border: #0E2953 solid 5px;
+        font-size: 30px;
+        height: 3vh;
+        margin-left: 55vw;
+        margin-top: 2vh;
+        position: fixed;
+      }
+    
+    
+    
+    .location {
+        display: grid;
+        grid-template-columns: 2fr 2fr 2fr;
+        background-color: #0E2953;
+        height: 90vh;
+      
+    }
+    
+    
+    .weather-station {
+        height: 16vh;
+        background-color: #3c6fdf;
+        margin-left: 5vw;
+        margin-right: 3vw;
+        margin-top: 20vh;
+      
+    }
+    
+    .middle {
+        display: grid;
+        grid-template-rows: .5fr .2fr .5fr;
+        background-color: #0E2953;
+        height: 70vh;
+        margin-top: 15vh;
+        
+    }
+    
+    .current-temp {
+        background-color: #3c6fdf;
+        background-image: linear-gradient(30deg,#3c6fdf, white, #f5eb63);
+        height: 30vh;
+        margin-bottom: 30vh;
+        margin-left: 4vw;
+        margin-right: 4vw;
+        margin-top: 16vh;
+    }
+    
+    
+    h1 {
+        font-size: 55px;
+        font-family: 'oxanium';
+        text-align: left;
+        color: #0E2953;
+        padding: 15px;
+        margin-top: 1vh;
+        margin-bottom: 1vh;
+        po
+    
+    }
+    
+    h2 {
+        font-size: 40px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color: #C6E1FF;
+        text-align: center;
+    }
+    
+    h3 {
+        font-size: 40px;
+        font-family: 'oxanium';
+        text-align: center;
+        color: #C6E1FF;
+        margin-top: -4vh;
+        border: #C6E1FF solid;
+        height: 6.5vh;
+    }
+    
+    h4 {
+        font-size: 30px;
+        font-family: 'oxanium';
+        text-align: center;
+        color: #C6E1FF;
+        margin-top: -20vh;
+    }
+    
+    h9 {
+        font-size: 50px;
+        font-family: 'oxanium';
+        text-align: center;
+        color: #C6E1FF;
+        margin-top: -30vh;
+    }
+    
+    h5 {
+        font-size: 35px;
+        font-family: 'oxanium';
+        text-align: center;
+        color: black;
+        margin-top: 1vh;
+    }
+    
+    h6 {
+        font-size: 100px;
+        font-family: 'oxanium';
+        text-align: center;
+        color: black;
+        margin-top: -5vh;
+        margin-bottom: -7vh;
+    }
+    
+    
+    h7 {
+        font-size: 30px;
+        font-family: 'oxanium';
+        text-align: center;
+        color: black;
+        margin-left: 1vw;
+    
+       
+    }
+    
+    .high-low {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        background-color: 0E2953;
+        height: 25vh;
+    }
+    
+    
+    h10 {
+        color: #C6E1FF;
+        border: #C6E1FF solid;
+        font-size: 30px;
+        font-family: 'oxanium';
+        text-align: center;
+        margin-top: -1vh;
+        margin-left: 6vw;
+        height: 9vh;
+    }
+    
+    h11 {
+        color: #C6E1FF;
+        font-size: 50px;
+        font-family: 'oxanium';
+        margin-top: -9vh;
+        padding-bottom: 3vh;
+        padding-right: 2.5vw;
+        margin-left: 2vw;
+        
+        
+    }
+    
+    h12 {
+        color: #C6E1FF;
+        border: #C6E1FF solid;
+        font-size: 30px;
+        font-family: 'oxanium';
+        text-align: center;
+        margin-top: -2vh;
+        margin-left: 6vw;
+        height: 9vh;
+    }
+        
+    h13 {
+        color: #C6E1FF;
+        font-size: 50px;
+        font-family: 'oxanium';
+        padding-top: 3vh;
+        padding-bottom: -4vh;
+        padding-right: 2.5vw;
+        margin-left: 2vw;
+        margin-top: -15vh;
+    }
+    
+    h14 {
+        color: black;
+        font-size: 30px;
+        font-family: 'oxanium';
+        text-align: center;
+        margin-left: 30vw;
+    }
+    
+    
+    
+    
+    
+    .hourly-times {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 2fr 1fr;
+        background-color: #3c6fdf;
+        height: 30vh;
+        grid-gap: 15px;
+        padding: 30px;
+        padding-left: 100px;
+        padding-right: 100px;
+    
+    }
+    
+    .hourly-temps {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 2fr 1fr;
+        background-color: #3c6fdf;
+        background-color: ;
+        height: 30vh;
+        grid-gap: 15px;
+        padding: 30px;
+        padding-bottom: 9vh;
+        padding-left: 100px;
+        padding-right: 100px;
+        margin-top: -32vh;
+        
+       
+    }
+    
+    
+    
+    h15 {
+        color: #0E2953;
+        font-size: 30px;
+        font-family: 'oxanium';
+        text-align: center;
+        border: #0E2953 solid;
+        margin-bottom: 30vh;
+    }
+    
+    
+    h16 {
+        color: #0E2953;
+        font-size: 60px;
+        font-family: 'oxanium';
+        text-align: center;
+        padding-top: 40px;
+        margin-left: -5vw;
+        
+    }
+    
+    
+    
+    
+    img {
+        margin-left: 4vw;
+        height: 7vh;
+        width: 14vw;
+        margin-top: 8vh;
+        margin-right: -17vw;
+        margin-bottom: 4.5vh;
+      }
+    
+    .icon1 {
+        width: 8vw;
+        height: 8vw;
+        margin-left: -1vw;
+        margin-top: 4vh;
+    }
+    
+    .icon2 {
+        width: 8vw;
+        height: 8vw;
+        margin-left: .1vw;
+        margin-top: 4vh;
+    }
+    
+    .icon3 {
+        width: 11vw;
+        height: 7vw;
+        margin-left: .5vw;
+        margin-top: 4vh;
+    }
+    
+    .icon4 {
+        width: 11vw;
+        height: 9vw;
+        margin-left: .5vw;
+        margin-top: 4vh;
+    }
+    
+    .icon5 {
+        width: 11vw;
+        height: 12vw;
+        margin-left: .5vw;
+        margin-top: 4vh;
+    }
+    
+    .icon6 {
+        width: 8vw;
+        height: 5vw;
+        margin-left: 2vw;
+        margin-top: 5vh;
+    }
+    
+    .icon7 {
+        width: 11vw;
+        height: 7vw;
+        margin-left: .5vw;
+        margin-top: 4vh;
+    }
+    
+    .temps {
+        display: grid;
+        grid-template-columns: .5fr .5fr .5fr .5fr .5fr .5fr .5fr;
+        background-color: #3c6fdf;
+        height: 20vh;
+        width: 86vw;
+        margin-top: -28vh;
+        margin-left: 10vw;
+       
+        
+    }
+    
+    .rise-set {
+        background-color: #3c6fdf;
+        height: 40vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 50px;
+        padding-top: 50px;
+        padding-right: 350px;
+        padding-left: 350px;
+    }
+    
+    
+    
+    .rise-set-time {
+        background-color: #3c6fdf;
+        height: 12vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+       
+    
+    }
+    
+    h20 {
+        color: #0E2953;
+        font-size: 40px;
+        font-family: 'oxanium';
+        text-align: center;
+        margin-left: 30vw;
+        margin-top: -32vh;
+        border: #0E2953 solid;
+        margin-bottom: 82vh;
+        width: 15vw;
+    }
+    
+    h21 {
+        color: #0E2953;
+        font-size: 40px;
+        font-family: 'oxanium';
+        text-align: center;
+        margin-left: 6vw;
+        margin-top: -32vh;
+        margin-bottom: 82vh;
+        border: #0E2953 solid;
+        width: 15vw;
+        
+    }
+    
+    .icon8 {
+        width: 15vw;
+        height: 11.5vw;
+        margin-top: -7vh;
+        margin-left: -5vw;
+    }
+    
+    .icon9 {
+        width: 15vw;
+        height: 15vw;
+        margin-top: -6.5vh;
+    }
+    
+    .future-weather {
+        background-color: #C6E1FF;
+        height: 60vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-top: -37vh;
+        grid-gap: 25px;
+        padding: 35px;
+        margin-bottom: -50vh;
+    }
+    
+    .tonight {
+        background-color: #0E2953;
+        height: 40vh;
+       
+        
+    }
+    
+    .tomorrow {
+        background-color: #0E2953;
+        height: 40vh;
+       
+    }
+    
+    .tomorrow-night {
+        background-color: #0E2953;
+        height: 40vh;
+       
+    }
+    
+    .icon10 {
+        height: 5vh;
+        width: 5vh;
+        margin-top: -6vh;
+        margin-left: 5vw;
+        
+    
+     
+    }
+    
+    .icon11 {
+        height: 6vh;
+        width: 6vh;
+        margin-top: -16vh;
+        margin-left: 41vw;
+       
+    }
+    
+    .icon12 {
+        height: 6vh;
+        width: 6vh;
+        margin-top: -6vh;
+        margin-left: 40vw;
+    }
+    
+    .words {
+        background-color: #C6E1FF;
+        height: 60vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-top: -37vh;
+        grid-gap: 25px;
+        padding: 35px;
+        margin-bottom: -70vh;
+    }
+    
+    
+        
+        
+    
+    
+    h22 {
+        color: #C6E1FF;
+        font-size: 24px;
+        font-family: 'oxanium';
+        text-align: center;
+        margin-right: -8vw;
+        margin-top: -13vh;
+        
+    }
+    
+    h23 {
+        color: #C6E1FF;
+        font-size: 20px;
+        font-family: 'oxanium';
+        text-align: left;
+        margin-left: 12vw;
+        margin-top: -30vh;
+        
+    }
+    
+    h24 {
+        color: #C6E1FF;
+        font-size: 22px;
+        font-family: 'oxanium';
+        text-align: left;
+        margin-left: 3vw;
+        margin-top: -41vh;
+        
+    }
+    
+    h25 {
+        color: #C6E1FF;
+        font-size: 22px;
+        font-family: 'oxanium';
+        text-align: left;
+        margin-left: 3vw;
+        margin-top: -41vh;
+        
+    }
+    
+    h26 {
+        color: #C6E1FF;
+        font-size: 22px;
+        font-family: 'oxanium';
+        text-align: left;
+        margin-left: 3vw;
+        margin-top: -41vh;
+        
+    }
+    
+    .radar {
+        background-color: #C6E1FF;
+        height: 40vh;
+        margin-top: 25vh;
+        
+       
+    }
+    
+    .icon13 {
+        height: 30vh;
+        width: 80vw;
+        margin-left: 10vw;
+        
+    }
+    
+    .extra {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        background-color: #C6E1FF;
+        height: 60vh;
+        grid-gap: 25px;
+        padding: 30px;
+        padding-left: 10vw;
+        padding-right: 10vw;
+        margin-bottom: -45vh;
+        margin-top: -2vh;
+    }
+    
+    .humidity {
+        background-color: rgb(250, 213, 7);
+        height: 15vh;
+        border: #0E2953 solid;
+       
+    
+    }
+    
+    .wind {
+        background-color: rgb(250, 213, 7);
+        height: 15vh;
+        border: #0E2953 solid;
+    }
+    
+    .precipitation {
+        background-color: rgb(250, 213, 7);
+        height: 15vh;
+        border: #0E2953 solid;
+    }
+    
+    .pressure {
+        background-color: rgb(250, 213, 7);
+        height: 15vh;
+        border: #0E2953 solid;
+    }
+    
+    .second-line {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        background-color: #C6E1FF;
+        height: 60vh;
+        grid-gap: 25px;
+        padding: 30px;
+        padding-left: 10vw;
+        padding-right: 10vw;
+    }
+    
+    .visibility {
+        background-color: rgb(250, 213, 7);
+        height: 15vh;
+        border: #0E2953 solid;
+    }
+    
+    .uv {
+        background-color: rgb(250, 213, 7);
+        height: 15vh;
+        border: #0E2953 solid;
+    }
+    
+    .air-index {
+        background-color: rgb(250, 213, 7);
+        height: 15vh;
+        border: #0E2953 solid;
+    }
+    
+    .air {
+        background-color: rgb(250, 213, 7);
+        height: 15vh;
+        border: #0E2953 solid;
+    }
+    
+    .data {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        background-color: #C6E1FF;
+        height: .1vh;
+        grid-gap: 25px;
+        padding: 30px;
+        padding-left: 10vw;
+        padding-right: 10vw;
+    }
+    
+    
+    h27 {
+        color: black;
+        font-size: 26px;
+        font-family: 'oxanium';
+        text-align: center;
+        margin-top: -19vh;
+       
+        
+    }
+    
+    h28 {
+        color: black;
+        font-size: 70px;
+        font-family: 'oxanium';
+        text-align: center;
+        margin-top: -17vh;
+    }
+    
+    h29 {
+        color: black;
+        font-size: 50px;
+        font-family: 'oxanium';
+        text-align: center;
+        margin-top: -17vh;
+    }
+    
+    h30 {
+        color: black;
+        font-size: 70px;
+        font-family: 'oxanium';
+        text-align: center;
+        margin-top: -17vh;
+    }
+    
+    h31 {
+        color: black;
+        font-size: 50px;
+        font-family: 'oxanium';
+        text-align: center;
+        margin-top: -17vh;
+    }
+    
+    .second-data {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        background-color: #C6E1FF;
+        height: .1vh;
+        grid-gap: 25px;
+        padding: 30px;
+        padding-left: 10vw;
+        padding-right: 10vw;
+    }
+    
+    h32 {
+        color: black;
+        font-size: 26px;
+        font-family: 'oxanium';
+        text-align: center;
+        margin-top: -64vh;
+        
+    }
+    
+    h33 {
+        color: black;
+        font-size: 60px;
+        font-family: 'oxanium';
+        text-align: center;
+        margin-top: -60vh;
+        
+    }
+    
+    h34 {
+        color: black;
+        font-size: 70px;
+        font-family: 'oxanium';
+        text-align: center;
+        margin-top: -60vh;
+       
+        
+    }
+    
+    h35 {
+        color: black;
+        font-size: 70px;
+        font-family: 'oxanium';
+        text-align: center;
+        margin-top: -60vh;
+       
+        
+    }
+    
+    h36 {
+        color: black;
+        font-size: 70px;
+        font-family: 'oxanium';
+        text-align: center;
+        margin-top: -60vh;
+       
+        
+    }
