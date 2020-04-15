@@ -46,7 +46,7 @@ input {
 
 .weather-station {
     height: 28vh;
-    background-color: #3c6fdf;
+    background-color: red;
     margin-left: 5vw;
     margin-right: 3vw;
     margin-top: 20vh;
@@ -416,8 +416,8 @@ h21 {
 
 .icon10 {
     height: 12vh;
-    width: 12vh;
-    margin-top: -80vh;
+    width: 19vh;
+    margin-top: -90vh;
     margin-right: 21vw;
     
 
@@ -1902,9 +1902,9 @@ h36 {
     }
     
     .icon10 {
-        height: 5vh;
+        height: 10vh;
         width: 5vh;
-        margin-top: -6vh;
+        margin-top: -20vh;
         margin-left: 5vw;
         
     
@@ -2192,4 +2192,9 @@ h36 {
         margin-top: -60vh;
        
         
+    }
+
+    var Keys= {
+        openweathermap: 90d226c0ae15c725db83467002b4d46e
+        weatherbit: c2ac985710324cf79ef25bb754e76138
     }
