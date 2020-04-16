@@ -4,6 +4,12 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 
+
+
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<title>WeatherUpFront</title>
+<link rel="coverpage" href="images/cover.jpg" />
+
 <script src="keys.js"></script>
 
 <script
@@ -15,16 +21,18 @@
   href="https://unpkg.com/@warnick/forecast-js/css/forecast.css"
 />
 
-<meta http-equiv="Content-Style-Type" content="text/css" />
-<title>WeatherUpFront</title>
-<link rel="coverpage" href="images/cover.jpg" />
+<link
+  href="https://fonts.googleapis.com/css?family=Yatra+One&display=swap"
+  rel="stylesheet"
+/>
+
 <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
      <div class="results" id="app">
       
-<div>
+
 
     
 
@@ -55,80 +63,173 @@
         <div class="weather-station">
             <h2>Manhattan <br> Weather <br> Station</h2>
         </div>
+        
         <div class="middle">
-            <h3>Manhattan KS 66502</h3>
-            <div class="manhattan"></div>
-            <h4>Monday, March 2 2020</h4>
-            <div class="date"></div>
-            <h9>1:32pm</h9>
+            
+           
+            <p class="zip">{{location.zip}}</p>
+            <p class="city">{{location.name}}</p>
+            <p class="state">{{location.state}}</p>
+
+            <p class="description">{{current.description_main}}</p>
+            
+            <img src="img/50d.png" class="haze">
+            
+        
+            
+           
+            <p class="date">{{time.date}}</p>
+            <p class="time">
+              {{time.hour_12}}:{{time.minute}}:{{time.seconds}} {{time.ampm}}
+            </p>
+
+
             <div class="time"></div>
         
-        <div class="high-low">  
-            <h10>High for <br>Today</h10>
-            <div class="high">
-                <h11>68°</h11>
-                <div class="low"></div>
-            </div>
-            <h12>Low for <br> Today</h12>
+        <div class="high-low">   
             <div class="high-temp">
-                <h13>32°</h13>
-                <div class="low-temp"></div>
+                
             </div>
         </div> 
         </div>
 
         <div class="current-temp">
-            <h5>Now:</h5>
-            <h6>66°</h6>
-            <img src="img/02d.png">
-            <h7>Feels Like: 61°</h7>
+            <h37>Current Temperature:</h37>
+            <p class="degree_symbol current">{{current.temp.current}}</p>
+            <h37>Feels Like:</h37>
+            <p class="degree_symbol feelslike" class="feels-like">{{current.temp.feelslike}}</p>
+            <h37>Today's High:</h37>
+            <p class="degree_symbol high">{{current.temp.high}}</p>
+            <h37>Today's Low:</h37>
+            <p class="degree_symbol low">{{current.temp.low}}</p>
+           
     </div>
   
 </div>
        
-<div class="hourly-times">
-    <h15>2pm</h15>
-    <h15>3pm</h15>
-    <h15>4pm</h15>
-    <h15>5pm</h15>
-    <h15>6pm</h15>
-    <h15>7pm</h15>
-    <h15>8pm</h15>
-</div>
+<div class="hourly">
+   
+    
+<div class="hour0">
+    <p class="degree_symbol">{{hourly[0].time}}</p>
+    <p>{{hourly[0].temperature}}</p>
+    <p>{{hourly[0].temperatureTrend}}</p>
+    <p>{{hourly[0].windSpeed}}</p>
+    <p>{{hourly[0].windDirection}}</p>
+  </div> 
+    
+    
+    
+    <div class="hour1">
 
-<div class="hourly-temps">
-    
-    <img src="img/01d.png" class="icon1">
-    
-    <img src="img/01d.png" class="icon2">
-    
-    <img src="img/04d.png" class="icon3">
-    
-    <img src="img/11d.png" class="icon4">
-    
-    <img src="img/10d.png" class="icon5">
-    
-    <img src="img/50d.png" class="icon6">
-    
-    <img src="img/03d.png" class="icon7">
-    
-</div>
+        <p class="degree_symbol">{{hourly[1].time}}</p>
+        <p>{{hourly[1].temperature}}</p>
+        <p>{{hourly[1].temperatureTrend}}</p>
+        <p>{{hourly[1].windSpeed}}</p>
+        <p>{{hourly[1].windDirection}}</p>
+      </div> 
+      
+    <div class="hour2">
+        <p class="degree_symbol">{{hourly[2].time}}</p>
+      <p>{{hourly[2].temperature}}</p>
+      <p>{{hourly[2].temperatureTrend}}</p>
+      <p>{{hourly[2].windSpeed}}</p>
+      <p>{{hourly[2].windDirection}}</p>
+    </div> 
 
-<div class="temps">
-    <h16>66°</h16>
-    <h16>66°</h16>
-    <h16>68°</h16>
-    <h16>68°</h16>
-    <h16>69°</h16>
-    <h16>66°</h16>
-    <h16>57°</h16>
-</div>
-
- 
+    <div class="hour3">
+        <p class="degree_symbol">{{hourly[3].time}}</p>
+        <p>{{hourly[3].temperature}}</p>
+        <p>{{hourly[3].temperatureTrend}}</p>
+        <p>{{hourly[3].windSpeed}}</p>
+        <p>{{hourly[3].windDirection}}</p>
      
+    </div> 
+
+    <div class="hour4">
+        <p class="degree_symbol">{{hourly[4].time}}</p>
+        <p>{{hourly[4].temperature}}</p>
+        <p>{{hourly[4].temperatureTrend}}</p>
+        <p>{{hourly[4].windSpeed}}</p>
+        <p>{{hourly[4].windDirection}}</p>
+      </div> 
+   
+    
+   </div>
+    
+   
+</div>
+
     
 
-    <div class="rise-set">
+
+
+
+
+
+
+
+     
+<div class="forecast">
+
+  
+<div class="weekly-forecast"
+    <p class="degree_symbol">High - {{forecast[0].max_temp}}</p>
+    <p class="degree_symbol">Low - {{forecast[0].min_temp}}</p>
+
+
+    <p class="degree_symbol">High - {{forecast[1].max_temp}}</p>
+    <p class="degree_symbol">Low - {{forecast[1].min_temp}}</p>
+
+
+    <p class="degree_symbol">High - {{forecast[2].max_temp}}</p>
+    <p class="degree_symbol">Low - {{forecast[2].min_temp}}</p>
+
+
+    <p class="degree_symbol">High - {{forecast[3].max_temp}}</p>
+    <p class="degree_symbol">Low - {{forecast[3].min_temp}}</p>
+
+
+    <p class="degree_symbol">High - {{forecast[4].max_temp}}</p>
+    <p class="degree_symbol">Low - {{forecast[4].min_temp}}</p>
+</div>
+
+    <p>{{ forecast[0].weather.description }}</p>
+
+    <p>{{forecast[0].description_icon}}</p>
+    
+ <div class="icon">
+        <img v-bind:src="'/img/' + forecast[0].description_icon + '.png'>
+             v-bind:alt="forecast[0].weather.description"/>
+
+        <div v-bind:class="'icon_'+forecast[0].description_icon" class="red"></div>
+      </div>
+
+
+
+</div>
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="rise-set">
+        <p class="sunrise">{{current.sunrise}}</p>
+        <p class="sunset">{{current.sunset}}</p>
+       
         <img src="img/sunrise.png" class="icon8">
         <img src="img/sunset.png" class="icon9">
     </div>

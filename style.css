@@ -44,9 +44,87 @@ input {
 }
 
 
+.city {
+    font-size: 45px;
+    font-family: 'oxanium';
+    text-align: center;
+    margin-top: -1vh;
+    border: #C6E1FF solid;
+    color: #C6E1FF;
+    margin-bottom: -2vh;
+}
+
+.state {
+    font-size: 45px;
+    font-family: 'oxanium';
+    text-align: center; 
+    color: #C6E1FF;
+}
+
+
+.haze {
+   height: 50px;
+   width: 160px;
+   text-align: center;
+   margin-left: 12vw;
+  
+}
+
+
+
+.date {
+    font-size: 25px;
+    font-family: 'oxanium';
+    text-align: center; 
+    color: #C6E1FF;
+    margin-top: -40vh;
+}
+
+.time {
+    font-size: 35px;
+    font-family: 'oxanium';
+    text-align: center; 
+    color: #C6E1FF;
+    margin-top: -30vh;
+}
+
+.description {
+    font-size: 25px;
+    font-family: 'oxanium';
+    text-align: center; 
+    color: #C6E1FF;
+    margin-top: 25vh;
+    
+    
+        "id": 500,
+        "main": "Rain",
+        "description": "clear sky",
+        "icon": "10n"
+    
+
+
+}
+
+
+
+
+
+.high-low {
+    background-color: hotpink;
+    height: 10VH;
+}
+
+
+
+ 
+
+
+
+
+
 .weather-station {
     height: 28vh;
-    background-color: red;
+    background-color: #3c6fdf;
     margin-left: 5vw;
     margin-right: 3vw;
     margin-top: 20vh;
@@ -64,13 +142,27 @@ input {
 .current-temp {
     background-color: #3c6fdf;
     background-image: linear-gradient(30deg,#3c6fdf, white, #f5eb63);
-    height: 65vh;
+    height: 70vh;
     margin-bottom: 30vh;
     margin-left: 4vw;
     margin-right: 4vw;
     margin-top: 16vh;
+    padding: 20px;
+    font-size: 20px;
+    font-family: 'oxanium';
+    text-align: center;
+    color: plum;
 }
 
+
+.feels-like {
+    font-size: 55px;
+    font-family: 'oxanium';
+    text-align: left;
+    color: red;
+    padding: 15px;
+  
+}
 
 h1 {
     font-size: 55px;
@@ -80,7 +172,7 @@ h1 {
     padding: 15px;
     margin-top: -1vh;
     margin-bottom: 1vh;
-    po
+    
 
 }
 
@@ -101,13 +193,7 @@ h3 {
     height: 6.5vh;
 }
 
-h4 {
-    font-size: 30px;
-    font-family: 'oxanium';
-    text-align: center;
-    color: #C6E1FF;
-    margin-top: -7vh;
-}
+
 
 h9 {
     font-size: 50px;
@@ -143,25 +229,9 @@ h7 {
     margin-left: 2vw;
 }
 
-.high-low {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    background-color: 0E2953;
-    height: 25vh;
-}
 
 
-h10 {
-    color: #C6E1FF;
-    border: #C6E1FF solid;
-    font-size: 20px;
-    font-family: 'oxanium';
-    text-align: center;
-    margin-top: 1.1vh;
-    margin-left: 6vw;
-    height: 9vh;
-}
+
 
 h11 {
     color: #C6E1FF;
@@ -175,16 +245,6 @@ h11 {
     
 }
 
-h12 {
-    color: #C6E1FF;
-    border: #C6E1FF solid;
-    font-size: 20px;
-    font-family: 'oxanium';
-    text-align: center;
-    margin-top: -2vh;
-    margin-left: 6vw;
-    height: 9vh;
-}
     
 h13 {
     color: #C6E1FF;
@@ -271,11 +331,11 @@ img {
     margin-top: 3vh;
   }
 
-.icon1 {
-    width: 4vw;
-    height: 4vw;
-    margin-left: 3vw;
-}
+  .icon_01d {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
 
 .icon2 {
     width: 4vw;
@@ -416,8 +476,8 @@ h21 {
 
 .icon10 {
     height: 12vh;
-    width: 19vh;
-    margin-top: -90vh;
+    width: 12vh;
+    margin-top: -60vh;
     margin-right: 21vw;
     
 
@@ -515,7 +575,7 @@ h26 {
 
 .icon13 {
     height: 50vh;
-    width: 60vw;
+    width: 50vw;
     margin-left: 20vw;
     
 }
@@ -704,6 +764,131 @@ h36 {
    
     
 }
+
+
+h37 {
+    color: black;
+    font-size: 30px;
+    font-family: 'oxanium';
+    text-align: left;
+   
+}
+
+
+
+.forecast {
+    border: greenyellow solid;
+}
+
+
+
+.hourly {
+    width: 90vw;
+    margin: auto;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-column-gap: 160px;
+    font-family: 'oxanium';
+    font-size: 28px;
+    height: 40vh;
+    text-align: center;
+  }
+  
+.hour0 {
+    border: #0E2953 solid;
+}
+
+.hour1 {
+    border: #0E2953 solid;
+}
+
+.hour2 {
+    border: #0E2953 solid;
+}
+
+.hour3 {
+    border: #0E2953 solid;
+}
+
+.hour4 {
+    border: #0E2953 solid;
+}
+
+
+
+.weekly-forecast {
+    width: 90vw;
+    margin: auto;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-column-gap: 160px;
+    font-family: 'oxanium';
+    font-size: 28px;
+    height: 40vh;
+    text-align: center;
+}
+
+  .day {
+    border: 5px solid black;
+    padding: 5px;
+  }
+  
+  .day .description {
+    float: left;
+    width: 80%;
+    text-align: right;
+  }
+  
+  .day .precipitation {
+    /* padding-bottom: 5vh; */
+    float: left;
+    width: 20%;
+    /* padding-top: 5vh; */
+  }
+
+  .icon {
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 75vw;
+    height: 75vh;
+  }
+  
+  .day .weekday {
+    float: left;
+    width: 50%;
+    /* padding-bottom: 5vh; */
+  }
+  
+  .day .high_low {
+    float: left;
+    width: 50%;
+    /* padding-bottom: 5vh; */
+    text-align: right;
+  }
+
+  .red {
+      background-color: orchid;
+      height: 19vh;
+  }
+
+  .degree_symbol {
+      background-color: palegoldenrod;
+      height: 4vh;
+      color: black;
+    font-size: 40px;
+    font-family: 'oxanium';
+    text-align: center;
+   
+  }
+
+
+
+
 
 
 
@@ -2194,7 +2379,3 @@ h36 {
         
     }
 
-    var Keys= {
-        openweathermap: 90d226c0ae15c725db83467002b4d46e
-        weatherbit: c2ac985710324cf79ef25bb754e76138
-    }
