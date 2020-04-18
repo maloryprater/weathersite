@@ -1,8 +1,9 @@
 body{
     padding: 0;
     margin: 0;
-    background-color: #C6E1FF;
+    background-color: orange;
     font-family: 'dosis-light';
+    width: 100vw;
    
 }
 
@@ -11,9 +12,9 @@ body{
     display: grid;
     grid-template-columns: 1fr .5fr .5fr;
     grid-gap: 5px;
-    height: 10vh;
-    background-color: rgb(250, 213, 7);
-    background-image: linear-gradient(rgb(250, 213, 7), white);
+    height: 8vh;
+    background-color: orange;
+    background-image: linear-gradient( rgb(41, 2, 49),tomato,orange);
     padding: 5px;
     margin-bottom: 3vh;
     position: fixed;
@@ -26,7 +27,7 @@ input {
     display: block;
     background-color: white;
     color: black;
-    border: #0E2953 solid 5px;
+    border: rgb(41, 2, 49) solid 5px;
     font-size: 30px;
     position: fixed;
     margin-left: 65vw;
@@ -38,8 +39,10 @@ input {
 .location {
     display: grid;
     grid-template-columns: 2fr 2fr 2fr;
-    background-color: #0E2953;
-    height: 90vh;
+    background-color: rgb(41, 2, 49);
+    height: 95vh;
+    padding-left: 5vw;
+    
   
 }
 
@@ -48,27 +51,22 @@ input {
     font-size: 45px;
     font-family: 'oxanium';
     text-align: center;
-    margin-top: -1vh;
-    border: #C6E1FF solid;
-    color: #C6E1FF;
-    margin-bottom: -2vh;
+    margin-top: -46vh;
+    border: tomato solid;
+    color: tomato;
+    margin-bottom: 39vh;
 }
 
 .state {
     font-size: 45px;
     font-family: 'oxanium';
     text-align: center; 
-    color: #C6E1FF;
+    color: tomato;
+    margin-top: -47vh;
 }
 
 
-.haze {
-   height: 50px;
-   width: 160px;
-   text-align: center;
-   margin-left: 12vw;
-  
-}
+
 
 
 
@@ -76,36 +74,44 @@ input {
     font-size: 25px;
     font-family: 'oxanium';
     text-align: center; 
-    color: #C6E1FF;
-    margin-top: -40vh;
+    color: tomato;
+    margin-top: -38vh;
 }
 
 .time {
     font-size: 35px;
     font-family: 'oxanium';
     text-align: center; 
-    color: #C6E1FF;
+    color: tomato;
     margin-top: -30vh;
+   
+    
+ 
 }
 
-.description {
-    font-size: 25px;
+.description_long {
+    font-size: 30px;
     font-family: 'oxanium';
     text-align: center; 
-    color: #C6E1FF;
-    margin-top: 25vh;
-    
-    
-    
-    
+    color:  rgb(41, 2, 49);
+    margin-top: -5vh;
 
+}
 
+.fc4 {
+   margin-bottom: 6vh;
+    margin-top: 12vh;
 }
 
 
 
-
-
+.timeday {
+    font-size: 49px;
+    font-family: 'oxanium';
+    text-align: center; 
+    color: tomato;
+    margin-top: -55vh;
+}
 
 
  
@@ -126,16 +132,16 @@ input {
 .middle {
     display: grid;
     grid-template-rows: .5fr .2fr .5fr;
-    background-color: #0E2953;
-    height: 70vh;
-    margin-top: 15vh;
+    background-color: rgb(41, 2, 49);
+    height: 53vh;
+    margin-top: 42vh;
 }
 
 .current-temp {
     background-color: #3c6fdf;
     background-image: linear-gradient(30deg,#3c6fdf, white, #f5eb63);
-    height: 70vh;
-    margin-bottom: 30vh;
+    height: 68vh;
+    
     margin-left: 4vw;
     margin-right: 4vw;
     margin-top: 16vh;
@@ -143,216 +149,88 @@ input {
     font-size: 20px;
     font-family: 'oxanium';
     text-align: center;
-    color: plum;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-row-gap: 2px;
+    
+    
 }
 
-
-.feels-like {
-    font-size: 55px;
-    font-family: 'oxanium';
-    text-align: left;
-    color: red;
-    padding: 15px;
-  
-}
 
 h1 {
     font-size: 55px;
     font-family: 'oxanium';
     text-align: left;
-    color: #0E2953;
+    color: rgb(41, 2, 49);
     padding: 15px;
-    margin-top: -1vh;
-    margin-bottom: 1vh;
+    margin-top: .5vh;
     
 
 }
 
-h2 {
-    font-size: 40px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: #C6E1FF;
-    text-align: center;
-}
-
-h3 {
-    font-size: 40px;
-    font-family: 'oxanium';
-    text-align: center;
-    color: #C6E1FF;
-    margin-top: 1vh;
-    border: #C6E1FF solid;
-    height: 6.5vh;
-}
 
 
-h9 {
-    font-size: 50px;
-    font-family: 'oxanium';
-    text-align: center;
-    color: #C6E1FF;
-    margin-top: -17vh;
-}
 
-h5 {
-    font-size: 35px;
-    font-family: 'oxanium';
-    text-align: center;
-    color: black;
-    margin-top: 1vh;
-}
+
+
+
+
 
 h6 {
     font-size: 40px;
     font-family: 'oxanium';
     text-align: center;
-    color: cyan;
-    margin-top: -3vh;
+    color: orange;
+    margin-top: 1vh;
     margin-bottom: 20vh;
 }
 
 
-h7 {
-    font-size: 45px;
-    font-family: 'oxanium';
-    text-align: center;
-    color: black;
-    margin-left: 2vw;
+
+
+.icon8 {
+    margin-top: -12vh;
+    margin-left: 20vw;
 }
 
-
-
-
-
-h11 {
-    color: #C6E1FF;
-    font-size: 50px;
-    font-family: 'oxanium';
-    margin-top: -9vh;
-    padding-bottom: 3vh;
-    padding-right: 2.5vw;
-    margin-left: 2vw;
-    
-    
+.icon9 {
+    margin-top: -12vh;
+    margin-left: 10vw;
 }
 
-    
-h13 {
-    color: #C6E1FF;
-    font-size: 50px;
-    font-family: 'oxanium';
-    padding-top: 3vh;
-    padding-bottom: -4vh;
-    padding-right: 2.5vw;
-    margin-left: 2vw;
-    margin-top: -15vh;
-}
-
-h14 {
-    color: black;
-    font-size: 30px;
-    font-family: 'oxanium';
-    text-align: center;
-    margin-left: 30vw;
-}
-
-
-
-
-
-.hourly-times {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 2fr 1fr;
-    background-color: #3c6fdf;
-    height: 30vh;
-    grid-gap: 15px;
-    padding: 30px;
-    padding-left: 100px;
-    padding-right: 100px;
-
-}
-
-.hourly-temps {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 2fr 1fr;
-    background-color: #3c6fdf;
-    background-color: ;
-    height: 30vh;
-    grid-gap: 15px;
-    padding: 30px;
-    padding-bottom: 9vh;
-    padding-left: 100px;
-    padding-right: 100px;
-    margin-top: -32vh;
-    
-   
-}
-
-
-
-h15 {
-    color: #0E2953;
-    font-size: 30px;
-    font-family: 'oxanium';
-    text-align: center;
-    border: #0E2953 solid;
-    margin-bottom: 30vh;
-}
-
-
-h16 {
-    color: #0E2953;
-    font-size: 60px;
-    font-family: 'oxanium';
-    text-align: center;
-    padding-top: 40px;
-    margin-left: -5vw;
-    
-}
-
-
-
-
-
-
- 
-
-
-
-.temps {
-    display: grid;
-    grid-template-columns: .5fr .5fr .5fr .5fr .5fr .5fr .5fr;
-    background-color: #3c6fdf;
-    height: 20vh;
-    width: 86vw;
-    margin-top: -28vh;
-    margin-left: 9vw;
-   
-    
-}
 
 .rise-set {
-    background-color: #3c6fdf;
-    height: 40vh;
+    background-color: gold;
+    background-image: linear-gradient(rgb(248, 233, 144), orange);
+    height: 15vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 50px;
-    padding-top: 50px;
-    padding-right: 350px;
-    padding-left: 350px;
+    padding-top: 15px;
+    padding-bottom: 4px;
+    margin-top: -13vh;
+    margin-bottom: -1vh;
 }
 
 
 
-.rise-set-time {
-    background-color: #3c6fdf;
-    height: 40vh;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-   
 
+
+.sunrise {
+    color: papayawhip;
+    font-size: 40px;
+    font-family: 'oxanium';
+    text-align: center;
+    margin-right: -25vw;
+    margin-top: 9vh;
+}
+
+.sunset {
+    color: #0E2953;
+    font-size: 40px;
+    font-family: 'oxanium';
+    text-align: center;
+    margin-right: -5vw;
 }
 
 h20 {
@@ -380,24 +258,16 @@ h21 {
     
 }
 
-.icon8 {
-    width: 15vw;
-    height: 11.5vw;
-    margin-top: 1.5vh;
-}
 
-.icon9 {
-    width: 15vw;
-    height: 15vw;
-    margin-top: 1vh;
-}
+
+
 
 .future-weather {
     background-color: #C6E1FF;
     height: 60vh;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    margin-top: -37vh;
+    margin-top: -15vh;
     grid-gap: 25px;
     padding: 35px;
     margin-bottom: -50vh;
@@ -493,13 +363,7 @@ h26 {
     
 }
 
-.radar {
-    background-color: #C6E1FF;
-    height: 60vh;
-    margin-top: 30vh;
-    
-   
-}
+
 
 
 
@@ -513,6 +377,7 @@ h26 {
     padding-left: 10vw;
     padding-right: 10vw;
     margin-bottom: -45vh;
+    margin-top: 30vh;
    
 }
 
@@ -522,11 +387,6 @@ h26 {
     border: #0E2953 solid;
 }
 
-.wind {
-    background-color: rgb(250, 213, 7);
-    height: 25vh;
-    border: #0E2953 solid;
-}
 
 .precipitation {
     background-color: rgb(250, 213, 7);
@@ -632,8 +492,8 @@ h31 {
 .second-data {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    background-color: #C6E1FF;
-    height: .1vh;
+    background-color: orange;
+    height: 20vh;
     grid-gap: 25px;
     padding: 30px;
     padding-left: 10vw;
@@ -690,11 +550,42 @@ h36 {
 
 
 h37 {
-    color: black;
+    color:  rgb(41, 2, 49);
+    font-size: 30px;
+    font-family: 'oxanium';
+    text-align: center;
+    
+}
+
+h38 {
+    color:  rgb(41, 2, 49);
     font-size: 30px;
     font-family: 'oxanium';
     text-align: left;
+    margin-top: 3vh;
+    margin-bottom: -6vh;
    
+    
+ 
+    
+}
+
+h39 {
+    color:  rgb(41, 2, 49);
+    font-size: 30px;
+    font-family: 'oxanium';
+    text-align: left;
+    margin-top: 15vh;
+    
+}
+
+h40 {
+    color:  rgb(41, 2, 49);
+    font-size: 30px;
+    font-family: 'oxanium';
+    text-align: left;
+    margin-top: -13.5vh;
+    
 }
 
 
@@ -703,45 +594,95 @@ h37 {
 
 
 .hourly {
-    width: 90vw;
+    width: 100vw;
     margin: auto;
-    margin-top: 5vh;
     margin-bottom: 5vh;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-column-gap: 160px;
+    grid-column-gap: 10px;
     font-family: 'oxanium';
     font-size: 28px;
-    height: 40vh;
+    height: 48vh;
     text-align: center;
+    background-color: orange;
+    padding-top: 7vh;
+    
   }
   
-.hour0 {
-    border: #0E2953 solid;
-}
-
-.hour1 {
-    border: #0E2953 solid;
-}
-
-.hour2 {
-    border: #0E2953 solid;
-}
-
-.hour3 {
-    border: #0E2953 solid;
-}
-
-.hour4 {
-    border: #0E2953 solid;
+.firsthour {
+    
+    width: 18vw;
+    height: 40vh;
+    background-color:  rgb(41, 2, 49);
 }
 
 
 
+.secondhour {
+    
+    width: 18vw;
+    height: 40vh;
+    background-color: rgb(41, 2, 49);
+}
+
+.thirdhour {
+    
+    width: 18vw;
+    height: 40vh;
+    background-color:  rgb(41, 2, 49);
+}
+
+.fourthhour {
+    
+    width: 18vw;
+    height: 40vh;
+    background-color: rgb(41, 2, 49);
+}
+
+.fifthhour {
+    width: 18vw;
+    height: 40vh;
+    background-color:  rgb(41, 2, 49);
+}
+
+
+.time_hourfc {
+    font-size: 35px;
+    font-family: 'oxanium';
+    text-align: center;
+    margin-top: -3vh;
+    color: lightsalmon;
+}
+
+.temp {
+    font-size: 60px;
+    font-family: 'oxanium';
+    text-align: center;
+    margin-top: -20vh;
+    color: #ff6347;
+}
+
+.wind {
+    font-size: 30px;
+    font-family: 'oxanium';
+    text-align: center;
+    margin-top: 5vh;
+    color: salmon;
+    
+}
+
+.shortforecast {
+    font-size: 20px;
+    font-family: 'oxanium';
+    text-align: center;
+    margin-top: 10vh;
+    color: rgb(186, 247, 186);
+}
 
 
 
-  
+
+
   .day .description {
     float: left;
     width: 80%;
@@ -757,10 +698,15 @@ h37 {
 
   .icon {
     margin: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    width: 200px;
-    height: 150px;
+    margin-top: -60vh;
+    width: 100px;
+    height: 50px;
+    background-color: rgb(41, 2, 49);
+    margin-bottom: 10vh;
+    margin-top: -35vh;
+   
+
+
   }
   
   .day .weekday {
@@ -774,25 +720,63 @@ h37 {
     width: 50%;
     /* padding-bottom: 5vh; */
     text-align: right;
+    background-color: white;
   }
 
-  .red {
-      background-color: green;
-      height: 9vh;
-      width: 9vw;
-  }
 
-  .degree_symbol {
-      background-color: palegoldenrod;
+
+
+
+  .degree_symbol_current {
       height: 4vh;
-      color: black;
-    font-size: 25px;
+      color: tomato;
+    font-size: 80px;
     font-family: 'oxanium';
     text-align: center;
+    margin-top: -27vh;
+   
    
   }
 
-.icon_01d {
+  .degree_symbol_feelslike {
+    height: 4vh;
+    color: tomato;
+  font-size: 60px;
+  font-family: 'oxanium';
+  text-align: right;
+  margin-top: -1vh;
+  margin-bottom: -37vh;
+  }
+
+  .degree_symbol_high {
+    
+    height: 4vh;
+    color: tomato;
+  font-size: 60px;
+  font-family: 'oxanium';
+  text-align: right;
+  margin-top: -6vh;
+  margin-bottom: -37vh;
+  }
+
+  .degree_symbol_low {
+    height: 4vh;
+    color: tomato;
+  font-size: 60px;
+  font-family: 'oxanium';
+  text-align: right;
+  margin-top: -17vh;
+  margin-bottom: -37vh;
+  }
+
+.hilo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3px;
+}
+
+
+  .icon_01d {
     background-image: url("/img/01d.png");
     background-repeat: no-repeat;
     background-position: center;
@@ -878,13 +862,22 @@ h37 {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 115%;
-    width: 92px;
-    margin-left: 14vw;
+    height: 100px;
+    width: 100px;
+
+}
+
+
+.degree {
+    font-size: 65px;
+    font-family: 'oxanium';
+    text-align: center;
+    color: tomato;
+    margin-top: -33vh;
 }
 
 .forecast {
-    border: red solid;
+    
     margin: auto;
     margin-top: 5vh;
     margin-bottom: 5vh;
@@ -896,144 +889,98 @@ h37 {
     text-align: center;
     grid-gap: 5px;
     padding: 30px;
-    background-color: brown;
+    background-color: orange;
 }
 
-.fc4 {
-    height: 10px;
-    width: 10px;
-    margin-left: 12vw;
-}
+
 
 .day2 {
-    background-color: green;
-    height: 4vh;
-    width: 15vw;
+    background-color: rgb(41, 2, 49);
+    height: 44vh;
+    width: 18vw;
     color: black;
-  font-size: 20px;
-  font-family: 'oxanium';
-  text-align: center;
+    
 }
 
 .day3 {
-    background-color: blueviolet;
-    height: 4vh;
+    background-color: rgb(41, 2, 49);
+    height: 44vh;
     color: black;
-  font-size: 20px;
-  font-family: 'oxanium';
-  text-align: center;
-  width: 15vw;
+ 
+  width: 18vw;
 }
 
 
 .day4 {
-    background-color: green;
-    height: 4vh;
+    background-color: rgb(41, 2, 49);
+    height: 44vh;
     color: black;
-  font-size: 20px;
-  font-family: 'oxanium';
-  text-align: center;
-  width: 15vw;
+  
+  width: 18vw;
 }
 
 
 .day5 {
-    background-color: green;
-    height: 4vh;
+    background-color: rgb(41, 2, 49);
+    height: 44vh;
     color: black;
-  font-size: 20px;
-  font-family: 'oxanium';
-  text-align: center;
-  width: 15vw;
+ 
+  width: 18vw;
 }
 
 
 .day6 {
-    background-color: green;
-    height: 4vh;
-    color: black;
-  font-size: 40px;
-  font-family: 'oxanium';
-  text-align: center;
-  width: 15vw;
+    background-color: rgb(41, 2, 49);
+    height: 44vh;
+    width: 18vw;
+  
 }
 
 
 
-.degree_symbol_fc1high {
+.degree_symbol_fchigh {
     font-size: 25px;
     font-family: 'oxanium';
     text-align: center;
-    color: chartreuse;
+    color: orange;
+    margin-top: -2vh;
 }
 
-.degree_symbol_fc1low {
+.degree_symbol_fclow {
     font-size: 25px;
     font-family: 'oxanium';
     text-align: center;
-    color: chartreuse;
+    color: tomato;
+    margin-top: -2vh;
+   
 }
 
-.degree_symbol_fc2high {
+
+  .weather-description {
     font-size: 25px;
     font-family: 'oxanium';
     text-align: center;
-    color: chartreuse;
-}
+    color: palegreen;
+    margin-top: 3vh;
 
-.degree_symbol_fc2low {
-    font-size: 25px;
-    font-family: 'oxanium';
-    text-align: center;
-    color: chartreuse;
-}
-
-.degree_symbol_fc3high {
-    font-size: 25px;
-    font-family: 'oxanium';
-    text-align: center;
-    color: chartreuse;
-}
-
-.degree_symbol_fc3low {
-    font-size: 25px;
-    font-family: 'oxanium';
-    text-align: center;
-    color: chartreuse;
-}
-
-.degree_symbol_fc4high {
-    font-size: 25px;
-    font-family: 'oxanium';
-    text-align: center;
-    color: chartreuse;
-}
-
-.degree_symbol_fc4low {
-    font-size: 25px;
-    font-family: 'oxanium';
-    text-align: center;
-    color: chartreuse;
-}
-
-.degree_symbol_fc5high {
-    font-size: 25px;
-    font-family: 'oxanium';
-    text-align: center;
-    color: chartreuse;
-}
-
-.degree_symbol_fc5low {
-    font-size: 25px;
-    font-family: 'oxanium';
-    text-align: center;
-    color: chartreuse;
-}
+    margin-bottom: 4vh;
+  }
 
 
+  #map {
+    width: 400px;
+    height: 600px;
+    background-position: center;
+    margin-top: 20vh;
+    position: static;
+   
+    
+  }
 
 
-
+  .degree_symbol:not(:empty)::after {
+    content: "°";
+  }
 /* ----------- SMART PHONES ----------- */
  
  

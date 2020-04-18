@@ -62,10 +62,7 @@
 
 
     <div class="location">
-        <div class="weather-station">
-            <h2>Manhattan <br> Weather <br> Station</h2>
-        </div>
-        
+      <div id="map" class="map"></div>
         <div class="middle">
             
            
@@ -73,14 +70,16 @@
             <p class="city">{{location.name}}</p>
             <p class="state">{{location.state}}</p>
 
-            <p class="description">{{current.description_main}}</p>
-            
-        
+                        
+            <div class="timeday">  
+              <p v-bind:class="time.day">{{time.day}}</p>
+            </div>
            
-        <div class="fc4">
-            <img v-bind:src="  'img/' + forecast[4].description_icon + '.png'  " />
-          </div>
-            
+        
+
+          
+        
+          
           
           <p class="date">{{time.date}}</p>
             <p class="time">
@@ -88,71 +87,136 @@
             </p>
 
 
-            <div class="time"></div>
+           
         
       
         </div>
 
         <div class="current-temp">
             <h37>Current Temperature:</h37>
-            <p class="degree_symbol current">{{current.temp.current}}</p>
-            <h37>Feels Like:</h37>
-            <p class="degree_symbol feelslike">{{current.temp.feelslike}}</p>
-            <h37>Today's High:</h37>
-            <p class="degree_symbol high">{{current.temp.high}}</p>
-            <h37>Today's Low:</h37>
-            <p class="degree_symbol low">{{current.temp.low}}</p>
+            <div class="fc4">
+              <img v-bind:src="  'img/' + forecast[4].description_icon + '.png'  " />
+            </div>
+            
+            <div class="degree">
+            <p class="current_temp degree_symbol">{{current.temp.current}}</p>
+          </div>
+            <p class="description_long">{{current.description_long}}</p>
+   
+            
+            
+            
+            <h38>Feels Like:</h38>
+            <p class="degree_symbol_feelslike">{{current.temp.feelslike}}°</p>
+            <h39>Today's High:</h39>
+            <p class="degree_symbol_high">{{current.temp.high}}°</p>
+            <h40>Today's Low:</h40>
+            <p class="degree_symbol_low">{{current.temp.low}}°</p>
            
     </div>
   
 </div>
        
 <div class="hourly">
-   
-    
-<div class="hour0">
-    <p class="degree_symbol">{{hourly[0].time}}</p>
-    <p>{{hourly[0].temperature}}</p>
-    <p>{{hourly[0].temperatureTrend}}</p>
-    <p>{{hourly[0].windSpeed}}</p>
-    <p>{{hourly[0].windDirection}}</p>
-  </div> 
-    
-    
-    
-    <div class="hour1">
 
-        <p class="degree_symbol">{{hourly[1].time}}</p>
-        <p>{{hourly[1].temperature}}</p>
-        <p>{{hourly[1].temperatureTrend}}</p>
-        <p>{{hourly[1].windSpeed}}</p>
-        <p>{{hourly[1].windDirection}}</p>
-      </div> 
-      
-    <div class="hour2">
-        <p class="degree_symbol">{{hourly[2].time}}</p>
-      <p>{{hourly[2].temperature}}</p>
-      <p>{{hourly[2].temperatureTrend}}</p>
-      <p>{{hourly[2].windSpeed}}</p>
-      <p>{{hourly[2].windDirection}}</p>
-    </div> 
+  
+<div class="firsthour">
+  
+  <div class="time_hourfc">
+  <p>{{hourly[1].time}}</p>
+</div>
+  
+<div class="shortforecast">
+  <p>{{hourly[1].shortForecast}}</p>
+</div>
+  <p>{{hourly[1].description_icon}}</p>
 
-    <div class="hour3">
-        <p class="degree_symbol">{{hourly[3].time}}</p>
-        <p>{{hourly[3].temperature}}</p>
-        <p>{{hourly[3].temperatureTrend}}</p>
-        <p>{{hourly[3].windSpeed}}</p>
-        <p>{{hourly[3].windDirection}}</p>
-     
-    </div> 
+  <div class="temp">
+    <p>{{hourly[1].temperature}}°</p>
+  </div>
+  
+  <div class="wind">
+  <p>{{hourly[1].windSpeed}}</p>
+  <p>{{hourly[1].windDirection}}</p>
+</div>
+</div>
 
-    <div class="hour4">
-        <p class="degree_symbol">{{hourly[4].time}}</p>
-        <p>{{hourly[4].temperature}}</p>
-        <p>{{hourly[4].temperatureTrend}}</p>
-        <p>{{hourly[4].windSpeed}}</p>
-        <p>{{hourly[4].windDirection}}</p>
-      </div> 
+  
+<div class="secondhour">
+  <div class="time_hourfc">
+    <p>{{hourly[2].time}}</p>
+  </div>
+  <div class="shortforecast">
+  <p>{{hourly[2].shortForecast}}</p>
+</div>
+  
+  <div class="temp">
+    <p>{{hourly[2].temperature}}°</p>
+  </div>
+  <div class="wind">
+    <p>{{hourly[2].windSpeed}}</p>
+    <p>{{hourly[2].windDirection}}</p>
+  </div>
+</div>
+  
+  <div class="thirdhour">
+    <div class="time_hourfc">
+      <p>{{hourly[3].time}}</p>
+    </div>
+    <div class="shortforecast">
+      <p>{{hourly[3].shortForecast}}</p>
+    </div>
+    <div class="temp">
+      <p>{{hourly[3].temperature}}°</p>
+    </div>
+    <div class="wind">
+      <p>{{hourly[3].windSpeed}}</p>
+      <p>{{hourly[3].windDirection}}</p>
+    </div>
+</div>
+
+  <div class="fourthhour">
+    <div class="time_hourfc">
+      <p>{{hourly[4].time}}</p>
+    </div>
+    <div class="shortforecast">
+      <p>{{hourly[4].shortForecast}}</p>
+    </div>
+    <div class="temp">
+      <p>{{hourly[4].temperature}}°</p>
+    </div>
+    <div class="wind">
+      <p>{{hourly[4].windSpeed}}</p>
+      <p>{{hourly[4].windDirection}}</p>
+    </div>
+</div>
+  
+  
+  <div class="fifthhour">
+    <div class="time_hourfc">
+      <p>{{hourly[5].time}}</p>
+    </div>
+  
+    <div class="shortforecast">
+      <p>{{hourly[5].shortForecast}}</p>
+    </div>
+  
+  <div class="temp">
+    <p>{{hourly[5].temperature}}°</p>
+  </div>
+    
+  <div class="wind">
+    <p>{{hourly[5].windSpeed}}</p>
+    <p>{{hourly[5].windDirection}}</p>
+  </div>
+</div>
+
+
+
+    
+    
+    
+
    
     
    </div>
@@ -160,7 +224,17 @@
    
 
 
+   <div class="rise-set">
+    <p class="sunrise">{{current.sunrise}}</p>
+    <p class="sunset">{{current.sunset}}</p>
+   
+    <img src="img/sunrise.png" class="icon8">
+    <img src="img/sunset.png" class="icon9">
+</div>
+
+<div class="rise-set-time">
     
+</div>
 
 
 
@@ -174,204 +248,110 @@
     <div class="day2">
             
             <h6>{{forecast[1].weekday}}</h6>
+            <div class="weather-description">
+              <p>{{ forecast[1].weather.description }}</p>
+            </div>
+              
+            <p  class="degree_symbol_fchigh">High - {{forecast[1].max_temp}}°</p>
+            <p  class="degree_symbol_fclow">Low - {{forecast[1].min_temp}}°</p>
             
-            <p  class="degree_symbol_fc1high">High - {{forecast[1].max_temp}}</p>
-            <p  class="degree_symbol_fc1low">Low - {{forecast[1].min_temp}}</p>
-            <p>exmaple</p>
             
-            <p>{{ forecast[1].uv }}</p>
-            <p>{{ forecast[1].weather.description }}</p>
-
-            <p>{{forecast[1].description_icon}}</p>
-
 
             <div class="icon">
                 <img v-bind:src="'/img/' + forecast[1].description_icon + '.png'" 
                 v-bind:alt="forecast[1].weather.description">
             </div>
 
-            <div v-bind:class="'icon_'+forecast[1].description_icon" class="red"></div>
-
-            <p>{{forecast[1].wind_spd}} mph</p>
-            <p>{{forecast[1].wind_cdir_full}}</p>
-            <p>{{forecast[1].wind_cdir}}</p>
-
-            <p>{{forecast[1].vis}}</p>
-
-            <p>{{forecast[1].pop}}</p>
-
-            <p>{{forecast[1].precip}}</p>
-
-            <p>{{forecast[1].snow}}</p>
-
-            <p>{{forecast[1].dewpt}}</p>
-            <p>{{forecast[1].pres}} mb</p>
           </div>
            
           
         <div class="day3">
         
           <h6>{{forecast[2].weekday}}</h6>
+          <div class="weather-description">
+            <p>{{ forecast[2].weather.description }}</p>
+          </div>
             
-          <p  class="degree_symbol_fc1high">High - {{forecast[2].max_temp}}</p>
-          <p  class="degree_symbol_fc1low">Low - {{forecast[2].min_temp}}</p>
-          <p>exmaple</p>
+          <p  class="degree_symbol_fchigh">High - {{forecast[2].max_temp}}°</p>
+          <p  class="degree_symbol_fclow">Low - {{forecast[2].min_temp}}°</p>
           
-          <p>{{ forecast[2].uv }}</p>
-          <p>{{ forecast[2].weather.description }}</p>
-
-          <p>{{forecast[2].description_icon}}</p>
-
+        
 
           <div class="icon">
-              <img v-bind:src="'/img/' + forecast[1].description_icon + '.png'" 
-              v-bind:alt="forecast[1].weather.description">
+              <img v-bind:src="'/img/' + forecast[2].description_icon + '.png'" 
+              v-bind:alt="forecast[2].weather.description">
           </div>
 
-          <div v-bind:class="'icon_'+forecast[1].description_icon" class="red"></div>
-
-          <p>{{forecast[2].wind_spd}} mph</p>
-          <p>{{forecast[2].wind_cdir_full}}</p>
-          <p>{{forecast[2].wind_cdir}}</p>
-
-          <p>{{forecast[2].vis}}</p>
-
-          <p>{{forecast[2].pop}}</p>
-
-          <p>{{forecast[2].precip}}</p>
-
-          <p>{{forecast[2].snow}}</p>
-
-          <p>{{forecast[2].dewpt}}</p>
-          <p>{{forecast[2].pres}} mb</p>
+          
         </div>
             
           
         <div class="day4">
           <h6>{{forecast[3].weekday}}</h6>
-            
-            <p  class="degree_symbol_fc1high">High - {{forecast[3].max_temp}}</p>
-            <p  class="degree_symbol_fc1low">Low - {{forecast[3].min_temp}}</p>
-            <p>exmaple</p>
-            
-            <p>{{ forecast[3].uv }}</p>
+          <div class="weather-description">
             <p>{{ forecast[3].weather.description }}</p>
-
-            <p>{{forecast[3].description_icon}}</p>
-
-
-            <div class="icon">
-                <img v-bind:src="'/img/' + forecast[3].description_icon + '.png'" 
-                v-bind:alt="forecast[3].weather.description">
-            </div>
-
-            <div v-bind:class="'icon_'+forecast[3].description_icon" class="red"></div>
-
-            <p>{{forecast[3].wind_spd}} mph</p>
-            <p>{{forecast[3].wind_cdir_full}}</p>
-            <p>{{forecast[3].wind_cdir}}</p>
-
-            <p>{{forecast[3].vis}}</p>
-
-            <p>{{forecast[3].pop}}</p>
-
-            <p>{{forecast[3].precip}}</p>
-
-            <p>{{forecast[3].snow}}</p>
-
-            <p>{{forecast[3].dewpt}}</p>
-            <p>{{forecast[3].pres}} mb</p>
           </div>
+            
+          <p  class="degree_symbol_fchigh">High - {{forecast[3].max_temp}}°</p>
+          <p  class="degree_symbol_fclow">Low - {{forecast[3].min_temp}}°</p>
+          
+          
+
+          <div class="icon">
+              <img v-bind:src="'/img/' + forecast[3].description_icon + '.png'" 
+              v-bind:alt="forecast[3].weather.description">
+          </div>
+
+        </div>
           
         <div class="day5">
           
           <h6>{{forecast[4].weekday}}</h6>
-            
-          <p  class="degree_symbol_fc1high">High - {{forecast[4].max_temp}}</p>
-          <p  class="degree_symbol_fc1low">Low - {{forecast[4].min_temp}}</p>
-          <p>exmaple</p>
+          <div class="weather-description">
+            <p>{{ forecast[4].weather.description }}</p>
+          </div>
           
-          <p>{{ forecast[4].uv }}</p>
-          <p>{{ forecast[4].weather.description }}</p>
-
-          <p>{{forecast[4].description_icon}}</p>
-
+          <p  class="degree_symbol_fchigh">High - {{forecast[4].max_temp}}°</p>
+          <p  class="degree_symbol_fclow">Low - {{forecast[4].min_temp}}°</p>
+          
+          
 
           <div class="icon">
               <img v-bind:src="'/img/' + forecast[4].description_icon + '.png'" 
               v-bind:alt="forecast[4].weather.description">
           </div>
 
-          <div v-bind:class="'icon_'+forecast[4].description_icon" class="red"></div>
-
-          <p>{{forecast[4].wind_spd}} mph</p>
-          <p>{{forecast[4].wind_cdir_full}}</p>
-          <p>{{forecast[4].wind_cdir}}</p>
-
-          <p>{{forecast[4].vis}}</p>
-
-          <p>{{forecast[4].pop}}</p>
-
-          <p>{{forecast[4].precip}}</p>
-
-          <p>{{forecast[4].snow}}</p>
-
-          <p>{{forecast[4].dewpt}}</p>
-          <p>{{forecast[4].pres}} mb</p>
+         
         </div>
             
           
         <div class="day6">
-         
           <h6>{{forecast[5].weekday}}</h6>
             
-          <p  class="degree_symbol_fc1high">High - {{forecast[5].max_temp}}</p>
-          <p  class="degree_symbol_fc1low">Low - {{forecast[5].min_temp}}</p>
-          <p>exmaple</p>
+          <div class="weather-description">
+            <p>{{forecast[5].weather.description}}</p>
+          </div>
+            
+         
+          <p  class="degree_symbol_fchigh">High - {{forecast[5].max_temp}}°</p>
+          <p  class="degree_symbol_fclow">Low - {{forecast[5].min_temp}}°</p>
           
-          <p>{{ forecast[5].uv }}</p>
-          <p>{{ forecast[5].weather.description }}</p>
-
-          <p>{{forecast[5].description_icon}}</p>
-
+          
 
           <div class="icon">
               <img v-bind:src="'/img/' + forecast[5].description_icon + '.png'" 
               v-bind:alt="forecast[5].weather.description">
           </div>
 
-          <div v-bind:class="'icon_'+forecast[5].description_icon" class="red"></div>
-
-          <p>{{forecast[5].wind_spd}} mph</p>
-          <p>{{forecast[5].wind_cdir_full}}</p>
-          <p>{{forecast[5].wind_cdir}}</p>
-
-          <p>{{forecast[5].vis}}</p>
-
-          <p>{{forecast[5].pop}}</p>
-
-          <p>{{forecast[5].precip}}</p>
-
-          <p>{{forecast[5].snow}}</p>
-
-          <p>{{forecast[5].dewpt}}</p>
-          <p>{{forecast[5].pres}} mb</p>
+          
         </div>
             
           
           
-            <div class="icon_01d "></div>
-            <div class="icon_02d "></div>
-            <div class="icon_03d "></div>
-            <div class="icon_04d "></div>
-            <div class="icon_09d "></div>
-            <div class="icon_10d "></div>
-            <div class="icon_11d "></div>
-            <div class="icon_13d "></div>
-            <div class="icon_50d "></div>
-            <div>
-                <img src="/img/03d.png" alt="">
-            </div>
+           
+          
+                
+           
 
         </div>
 
@@ -407,18 +387,7 @@
 
 
 
-<div class="rise-set">
-        <p class="sunrise">{{current.sunrise}}</p>
-        <p class="sunset">{{current.sunset}}</p>
-       
-        <img src="img/sunrise.png" class="icon8">
-        <img src="img/sunset.png" class="icon9">
-    </div>
-    
-    <div class="rise-set-time">
-        <h20>7:06am</h20>
-        <h21>7:51pm</h21>
-    </div>
+
     
     
     
@@ -446,6 +415,7 @@
 
   
     
+  
     
     
     
@@ -454,9 +424,6 @@
     
     
     
-    <div class="radar">
-        <img src="img/radar.png" class="icon13">
-    </div>
 
     <div class="extra">
             <div class="humidity"></div>
