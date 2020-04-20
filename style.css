@@ -19,6 +19,9 @@ body{
     margin-bottom: 3vh;
     position: fixed;
     width: 100vw;
+    right: 0;
+    left: 0;
+    z-index: 999;
 }
 
 
@@ -28,10 +31,12 @@ input {
     background-color: white;
     color: black;
     border: rgb(41, 2, 49) solid 5px;
-    font-size: 30px;
+    font-size: 25px;
     position: fixed;
     margin-left: 65vw;
     margin-top: 2vh;
+    border-radius: 25px;
+    text-align: center;
   }
 
 
@@ -55,6 +60,7 @@ input {
     border: tomato solid;
     color: tomato;
     margin-bottom: 39vh;
+    border-radius: 25px;
 }
 
 .state {
@@ -84,7 +90,11 @@ input {
     text-align: center; 
     color: tomato;
     margin-top: -30vh;
-   
+    border-radius: 25px;
+    border: tomato solid;
+    margin-bottom: 26vh;
+    margin-left: 5vw;
+    margin-right: 5vw;
     
  
 }
@@ -94,14 +104,11 @@ input {
     font-family: 'oxanium';
     text-align: center; 
     color:  rgb(41, 2, 49);
-    margin-top: -5vh;
+    margin-top: 15vh;
 
 }
 
-.fc4 {
-   margin-bottom: 6vh;
-    margin-top: 12vh;
-}
+
 
 
 
@@ -120,14 +127,7 @@ input {
 
 
 
-.weather-station {
-    height: 28vh;
-    background-color: #3c6fdf;
-    margin-left: 5vw;
-    margin-right: 3vw;
-    margin-top: 20vh;
-  
-}
+
 
 .middle {
     display: grid;
@@ -138,10 +138,10 @@ input {
 }
 
 .current-temp {
-    background-color: #3c6fdf;
-    background-image: linear-gradient(30deg,#3c6fdf, white, #f5eb63);
+    background-color: #rgb(41, 2, 49);
+    background-image: linear-gradient(30deg,lightsalmon, rgb(248, 233, 144), orange);
     height: 68vh;
-    
+    border-radius: 25px;
     margin-left: 4vw;
     margin-right: 4vw;
     margin-top: 16vh;
@@ -163,7 +163,7 @@ h1 {
     text-align: left;
     color: rgb(41, 2, 49);
     padding: 15px;
-    margin-top: .5vh;
+    margin-top: -.5vh;
     
 
 }
@@ -189,18 +189,18 @@ h6 {
 
 
 .icon8 {
-    margin-top: -12vh;
+    margin-top: -20vh;
     margin-left: 20vw;
 }
 
 .icon9 {
-    margin-top: -12vh;
+    margin-top: -20vh;
     margin-left: 10vw;
 }
 
 
 .rise-set {
-    background-color: gold;
+    background-color: rgb(248, 233, 144);
     background-image: linear-gradient(rgb(248, 233, 144), orange);
     height: 15vh;
     display: grid;
@@ -217,79 +217,30 @@ h6 {
 
 
 .sunrise {
-    color: papayawhip;
+    color: rgb(41, 2, 49);
     font-size: 40px;
     font-family: 'oxanium';
     text-align: center;
-    margin-right: -25vw;
-    margin-top: 9vh;
+    margin-left: 33vw;
+    margin-top: 6vh;
+    border: rgb(41, 2, 49) solid;
+    width: 10vw;
+    padding: 15px;
+    border-radius: 25px;
 }
 
 .sunset {
-    color: #0E2953;
+    color: rgb(41, 2, 49);
     font-size: 40px;
     font-family: 'oxanium';
     text-align: center;
-    margin-right: -5vw;
-}
-
-h20 {
-    color: #0E2953;
-    font-size: 40px;
-    font-family: 'oxanium';
-    text-align: center;
-    margin-left: 27vw;
-    margin-top: -12vh;
-    border: #0E2953 solid;
-    margin-bottom: 60vh;
-    width: 15vw;
-}
-
-h21 {
-    color: #0E2953;
-    font-size: 40px;
-    font-family: 'oxanium';
-    text-align: center;
-    margin-left: 5vw;
-    margin-top: -12vh;
-    margin-bottom: 60vh;
-    border: #0E2953 solid;
-    width: 15vw;
-    
-}
-
-
-
-
-
-.future-weather {
-    background-color: #C6E1FF;
-    height: 60vh;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin-top: -15vh;
-    grid-gap: 25px;
-    padding: 35px;
-    margin-bottom: -50vh;
-}
-
-.tonight {
-    background-color: #0E2953;
-    height: 40vh;
-   
-    
-}
-
-.tomorrow {
-    background-color: #0E2953;
-    height: 40vh;
-   
-}
-
-.tomorrow-night {
-    background-color: #0E2953;
-    height: 40vh;
-   
+    margin-left: 23vw;
+    margin-top: 6vh;
+    border: rgb(41, 2, 49) solid;
+    border: rgb(41, 2, 49) solid;
+    width: 10vw;
+    padding: 15px;
+    border-radius: 25px;
 }
 
 
@@ -297,71 +248,21 @@ h21 {
 
 
 
-.words {
-    background-color: #C6E1FF;
-    height: 60vh;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin-top: -37vh;
-    grid-gap: 25px;
-    padding: 35px;
-    margin-bottom: -70vh;
-}
+
+
+
+
+
+
+
+
 
 
     
     
 
 
-h22 {
-    color: #C6E1FF;
-    font-size: 30px;
-    font-family: 'oxanium';
-    text-align: center;
-    margin-right: -8vw;
-    margin-top: -17vh;
-    
-}
 
-h23 {
-    color: #C6E1FF;
-    font-size: 20px;
-    font-family: 'oxanium';
-    text-align: left;
-    margin-left: 12vw;
-    margin-top: -33vh;
-    
-}
-
-h24 {
-    color: #C6E1FF;
-    font-size: 22px;
-    font-family: 'oxanium';
-    text-align: left;
-    margin-left: 3vw;
-    margin-top: -40vh;
-    
-}
-
-h25 {
-    color: #C6E1FF;
-    font-size: 22px;
-    font-family: 'oxanium';
-    text-align: left;
-    margin-left: 3vw;
-    margin-top: -40vh;
-    
-}
-
-h26 {
-    color: #C6E1FF;
-    font-size: 22px;
-    font-family: 'oxanium';
-    text-align: left;
-    margin-left: 3vw;
-    margin-top: -40vh;
-    
-}
 
 
 
@@ -370,95 +271,134 @@ h26 {
 .extra {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    background-color: #C6E1FF;
+    background-color: rgb(41, 2, 49);
     height: 60vh;
     grid-gap: 25px;
-    padding: 30px;
-    padding-left: 10vw;
-    padding-right: 10vw;
     margin-bottom: -45vh;
     margin-top: 30vh;
+    width: 100vw;
    
 }
 
 .humidity {
-    background-color: rgb(250, 213, 7);
-    height: 25vh;
-    border: #0E2953 solid;
+    
+    height: 5vh;
+    background-color: rgb(41, 2, 49);
+    font-size: 70px;
+    font-family: 'oxanium';
+    color: tomato;
+    text-align: center;
+    padding-top: 3vh;
 }
 
-
-.precipitation {
-    background-color: rgb(250, 213, 7);
+.wind_end {
+  
     height: 25vh;
-    border: #0E2953 solid;
+    background-color: rgb(41, 2, 49);
+    font-size: 28px;
+    font-family: 'oxanium';
+    color:  tomato;
+    text-align: center;
+    margin-top: 10vh;
+}
+.precipitation {
+    height: 25vh;
+    background-color: rgb(41, 2, 49);
+    font-size: 28px;
+    font-family: 'oxanium';
+    color:  tomato;
+    text-align: center;
+    margin-top: 10vh;
 }
 
 .pressure {
-    background-color: rgb(250, 213, 7);
     height: 25vh;
-    border: #0E2953 solid;
+    background-color: rgb(41, 2, 49);
+    font-size: 70px;
+    font-family: 'oxanium';
+    color:  tomato;
+    text-align: center;
+    padding-top: 3vh;
 }
 
 .second-line {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    background-color: #C6E1FF;
-    height: 60vh;
+    background-color: rgb(41, 2, 49);
+    width: 100vw;
     grid-gap: 25px;
-    padding: 30px;
-    padding-left: 10vw;
-    padding-right: 10vw;
+ 
 }
 
 .visibility {
-    background-color: rgb(250, 213, 7);
     height: 25vh;
-    border: #0E2953 solid;
+    background-color: rgb(41, 2, 49);
+    font-size: 70px;
+    font-family: 'oxanium';
+    color:  tomato;
+    text-align: center;
+    padding-top: 1vh;
+    
 }
 
 .uv {
-    background-color: rgb(250, 213, 7);
-    height: 25vh;
-    border: #0E2953 solid;
+    height: 18vh;
+    background-color: rgb(41, 2, 49);
+    font-size: 70px;
+    font-family: 'oxanium';
+    color:  tomato;
+    text-align: center;
+    padding-top: 1vh;
 }
 
-.air-index {
-    background-color: rgb(250, 213, 7);
+.cloud-cover {
     height: 25vh;
-    border: #0E2953 solid;
+    background-color: rgb(41, 2, 49);
+    font-size: 70px;
+    font-family: 'oxanium';
+    color:  tomato;
+    text-align: center;
+    padding-top: 1vh;
 }
 
 .air {
-    background-color: rgb(250, 213, 7);
     height: 25vh;
-    border: #0E2953 solid;
+    background-color: rgb(41, 2, 49);
+    font-size: 70px;
+    font-family: 'oxanium';
+    color:  tomato;
+    text-align: center;
+    padding-top: 1vh;
+   
 }
 
 .data {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    background-color: #C6E1FF;
-    height: .1vh;
+    background-color:  rgb(41, 2, 49);
+    height: 12vh;
     grid-gap: 25px;
-    padding: 30px;
-    padding-left: 10vw;
-    padding-right: 10vw;
+    width: 100vw;
+    margin-top: 4vh;
 }
 
 
 h27 {
-    color: black;
+    color: rgb(248, 233, 144);
     font-size: 30px;
     font-family: 'oxanium';
     text-align: center;
-    margin-top: -20vh;
-   
-    
+    margin-top: -16vh;
+    border: rgb(248, 233, 144) solid;
+    margin-bottom: 16vh;
+    width: 15vw;
+    height: 5vh;
+    margin-left: 3.5vw;
+    border-radius: 25px;
 }
 
 h28 {
-    color: black;
+    color:  rgb(41, 2, 49);
     font-size: 70px;
     font-family: 'oxanium';
     text-align: center;
@@ -466,7 +406,7 @@ h28 {
 }
 
 h29 {
-    color: black;
+    color:  rgb(41, 2, 49);
     font-size: 50px;
     font-family: 'oxanium';
     text-align: center;
@@ -474,7 +414,7 @@ h29 {
 }
 
 h30 {
-    color: black;
+    color:  rgb(41, 2, 49);
     font-size: 70px;
     font-family: 'oxanium';
     text-align: center;
@@ -482,7 +422,7 @@ h30 {
 }
 
 h31 {
-    color: black;
+    color:  rgb(41, 2, 49);
     font-size: 50px;
     font-family: 'oxanium';
     text-align: center;
@@ -492,61 +432,33 @@ h31 {
 .second-data {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    background-color: orange;
-    height: 20vh;
+    background-color:  rgb(41, 2, 49);
     grid-gap: 25px;
-    padding: 30px;
-    padding-left: 10vw;
-    padding-right: 10vw;
+    height: 10vh;
+    margin-top: 7vh;
+    width: 100vw;
 }
 
 h32 {
-    color: black;
+    color:   rgb(248, 233, 144);
     font-size: 30px;
     font-family: 'oxanium';
     text-align: center;
-    margin-top: -66vh;
-    
+    margin-top: -35vh;
+    border:rgb(248, 233, 144) solid;
+    margin-bottom: 55vh;
+    width: 15vw;
+    height: 5vh;
+    margin-left: 3.5vw;
+    border-radius: 25px;
 }
 
-h33 {
-    color: black;
-    font-size: 70px;
-    font-family: 'oxanium';
-    text-align: center;
-    margin-top: -60vh;
-    
-}
 
-h34 {
-    color: black;
-    font-size: 70px;
-    font-family: 'oxanium';
-    text-align: center;
-    margin-top: -60vh;
-   
-    
-}
 
-h35 {
-    color: black;
-    font-size: 70px;
-    font-family: 'oxanium';
-    text-align: center;
-    margin-top: -60vh;
-   
-    
-}
 
-h36 {
-    color: black;
-    font-size: 70px;
-    font-family: 'oxanium';
-    text-align: center;
-    margin-top: -60vh;
-   
-    
-}
+
+
+
 
 
 h37 {
@@ -554,6 +466,7 @@ h37 {
     font-size: 30px;
     font-family: 'oxanium';
     text-align: center;
+    margin-top: -1vh;
     
 }
 
@@ -562,8 +475,8 @@ h38 {
     font-size: 30px;
     font-family: 'oxanium';
     text-align: left;
-    margin-top: 3vh;
-    margin-bottom: -6vh;
+   
+   
    
     
  
@@ -575,7 +488,7 @@ h39 {
     font-size: 30px;
     font-family: 'oxanium';
     text-align: left;
-    margin-top: 15vh;
+    
     
 }
 
@@ -584,7 +497,7 @@ h40 {
     font-size: 30px;
     font-family: 'oxanium';
     text-align: left;
-    margin-top: -13.5vh;
+   
     
 }
 
@@ -604,13 +517,14 @@ h40 {
     font-size: 28px;
     height: 48vh;
     text-align: center;
-    background-color: orange;
+    background-color: rgb(248, 233, 144);
+    background-image: linear-gradient(orange, rgb(248, 233, 144));
     padding-top: 7vh;
     
   }
   
 .firsthour {
-    
+    border-radius: 25px;
     width: 18vw;
     height: 40vh;
     background-color:  rgb(41, 2, 49);
@@ -619,21 +533,21 @@ h40 {
 
 
 .secondhour {
-    
+    border-radius: 25px;
     width: 18vw;
     height: 40vh;
     background-color: rgb(41, 2, 49);
 }
 
 .thirdhour {
-    
+    border-radius: 25px;
     width: 18vw;
     height: 40vh;
     background-color:  rgb(41, 2, 49);
 }
 
 .fourthhour {
-    
+    border-radius: 25px;
     width: 18vw;
     height: 40vh;
     background-color: rgb(41, 2, 49);
@@ -643,6 +557,7 @@ h40 {
     width: 18vw;
     height: 40vh;
     background-color:  rgb(41, 2, 49);
+    border-radius: 25px;
 }
 
 
@@ -659,7 +574,7 @@ h40 {
     font-family: 'oxanium';
     text-align: center;
     margin-top: -20vh;
-    color: #ff6347;
+    color: tomato;
 }
 
 .wind {
@@ -676,7 +591,7 @@ h40 {
     font-family: 'oxanium';
     text-align: center;
     margin-top: 10vh;
-    color: rgb(186, 247, 186);
+    color: rgb(248, 233, 144);
 }
 
 
@@ -696,9 +611,9 @@ h40 {
     /* padding-top: 5vh; */
   }
 
-  .icon {
+  .icon_forecast {
     margin: auto;
-    margin-top: -60vh;
+    margin-top: 80vh;
     width: 100px;
     height: 50px;
     background-color: rgb(41, 2, 49);
@@ -733,7 +648,7 @@ h40 {
     font-size: 80px;
     font-family: 'oxanium';
     text-align: center;
-    margin-top: -27vh;
+    margin-top: -7vh;
    
    
   }
@@ -744,7 +659,7 @@ h40 {
   font-size: 60px;
   font-family: 'oxanium';
   text-align: right;
-  margin-top: -1vh;
+  margin-top: -6.5vh;
   margin-bottom: -37vh;
   }
 
@@ -765,7 +680,7 @@ h40 {
   font-size: 60px;
   font-family: 'oxanium';
   text-align: right;
-  margin-top: -17vh;
+  margin-top: -6vh;
   margin-bottom: -37vh;
   }
 
@@ -885,7 +800,7 @@ h40 {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     font-family: 'oxanium';
     font-size: 8px;
-    height: 60vh;
+    height: 20vh;
     text-align: center;
     grid-gap: 5px;
     padding: 30px;
@@ -899,15 +814,15 @@ h40 {
     height: 44vh;
     width: 18vw;
     color: black;
-    
+    border-radius: 25px;
 }
 
 .day3 {
     background-color: rgb(41, 2, 49);
     height: 44vh;
     color: black;
- 
-  width: 18vw;
+    border-radius: 25px;
+    width: 18vw;
 }
 
 
@@ -915,8 +830,8 @@ h40 {
     background-color: rgb(41, 2, 49);
     height: 44vh;
     color: black;
-  
-  width: 18vw;
+    border-radius: 25px;
+    width: 18vw;
 }
 
 
@@ -924,8 +839,8 @@ h40 {
     background-color: rgb(41, 2, 49);
     height: 44vh;
     color: black;
- 
-  width: 18vw;
+    border-radius: 25px;
+    width: 18vw;
 }
 
 
@@ -933,7 +848,7 @@ h40 {
     background-color: rgb(41, 2, 49);
     height: 44vh;
     width: 18vw;
-  
+    border-radius: 25px;
 }
 
 
@@ -960,7 +875,7 @@ h40 {
     font-size: 25px;
     font-family: 'oxanium';
     text-align: center;
-    color: palegreen;
+    color: rgb(248, 233, 144);
     margin-top: 3vh;
 
     margin-bottom: 4vh;
@@ -972,7 +887,7 @@ h40 {
     height: 600px;
     background-position: center;
     margin-top: 20vh;
-    position: static;
+   position: -webkit-sticky;
    
     
   }
@@ -981,7 +896,37 @@ h40 {
   .degree_symbol:not(:empty)::after {
     content: "°";
   }
-/* ----------- SMART PHONES ----------- */
+
+
+.icon {
+    margin: auto;
+    margin-top: 80vh;
+    width: 100px;
+    height: 50px;
+    background-color: darkcy rgb(41, 2, 49)an;
+    margin-bottom: 10vh;
+    margin-top: 2vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* ----------- SMART PHONES ----------- */
  
  
 @media only screen and (max-width: 800px) {

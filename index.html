@@ -94,17 +94,21 @@
 
         <div class="current-temp">
             <h37>Current Temperature:</h37>
-            <div class="fc4">
-              <img v-bind:src="  'img/' + forecast[4].description_icon + '.png'  " />
-            </div>
+          
             
-            <div class="degree">
+            <div class="degree_symbol_current">
             <p class="current_temp degree_symbol">{{current.temp.current}}</p>
           </div>
             <p class="description_long">{{current.description_long}}</p>
-   
-            
-            
+          
+          
+            <div class="icon">
+              <img v-bind:src="'/img/' + forecast[0].description_icon + '.png'" 
+              v-bind:alt="forecast[0].weather.description">
+          </div>
+          
+          
+         
             
             <h38>Feels Like:</h38>
             <p class="degree_symbol_feelslike">{{current.temp.feelslike}}°</p>
@@ -257,7 +261,7 @@
             
             
 
-            <div class="icon">
+            <div class="icon_forecast">
                 <img v-bind:src="'/img/' + forecast[1].description_icon + '.png'" 
                 v-bind:alt="forecast[1].weather.description">
             </div>
@@ -277,7 +281,7 @@
           
         
 
-          <div class="icon">
+          <div class="icon_forecast">
               <img v-bind:src="'/img/' + forecast[2].description_icon + '.png'" 
               v-bind:alt="forecast[2].weather.description">
           </div>
@@ -297,7 +301,7 @@
           
           
 
-          <div class="icon">
+          <div class="icon_forecast">
               <img v-bind:src="'/img/' + forecast[3].description_icon + '.png'" 
               v-bind:alt="forecast[3].weather.description">
           </div>
@@ -316,7 +320,7 @@
           
           
 
-          <div class="icon">
+          <div class="icon_forecast">
               <img v-bind:src="'/img/' + forecast[4].description_icon + '.png'" 
               v-bind:alt="forecast[4].weather.description">
           </div>
@@ -338,7 +342,7 @@
           
           
 
-          <div class="icon">
+          <div class="icon_forecast">
               <img v-bind:src="'/img/' + forecast[5].description_icon + '.png'" 
               v-bind:alt="forecast[5].weather.description">
           </div>
@@ -391,27 +395,9 @@
     
     
     
-    <div class="future-weather">
-       
-        <div class="tonight"></div>
-       
-        <div class="tomorrow"></div>
-       
-        <div class="tomorrow-night"></div>
-        
-    </div>
+ 
 
-    <div class="words">
-       <h22>Tonight</h22>
-       <h22>Tomorrow</h22>
-       <h22>Tomorrow Night</h22>
-       <h23>MON 03/02<br>LOW 32°</h23>
-       <h23>MON 03/03<br>LOW 32°</h23>
-       <h23>MON 03/03<br>LOW 32°</h23>
-       <h24>Temperatures will fall quickly <br>this evening, leading into<br> freezing winds NNW at 10 to 20 mph<br> and a 90% chance of snow.</h24>
-       <h25>Overcast. A stray shower or <br>thunderstorm is possible. High <br>69°F. Winds SSW at 10 to 15 mph.</h25>
-       <h26>Scattered thunderstorms this <br>evening giving way to periods <br>of light rain late. Low 32°F. <br>Winds NNW at 10 to 20 mph. Chance of rain 70%.</h26>
-    </div>
+  
 
   
     
@@ -426,10 +412,23 @@
     
 
     <div class="extra">
-            <div class="humidity"></div>
-            <div class="wind"></div>
-            <div class="precipitation"></div>
-            <div class="pressure"></div>
+            <div class="humidity">
+              <p class="humidity">{{current.humidity}}</p>
+            </div>
+            <div class="wind_end">
+              <p>{{forecast[0].wind_spd}} mph</p>
+              <p>{{forecast[0].wind_cdir_full}}</p>
+            </div>
+          <div class="precipitation">
+            
+
+            <p>{{forecast[0].pop}}</p>
+      
+            <p>{{forecast[0].precip}}</p>
+          </div>
+            <div class="pressure">
+              <p class="pressure">{{current.pressure}}</p>
+          </div>
     </div>
 
     <div class="data">
@@ -437,29 +436,30 @@
         <h27>Wind</h27>
         <h27>Precipitation</h27>
         <h27>Pressure</h27>
-        <h28>32%</h28>
-        <h29>N 5 mph</h29>
-        <h30>0 in</h30>
-        <h31>30.34 inHg</h31>
+
     </div>
     
 
         <div class="second-line">
-            <div class="visibility"></div>
-            <div class="uv"></div>
-            <div class="air-index"></div>
-            <div class="air"></div>
+            <div class="visibility">
+              <p>{{forecast[0].vis}}</p>
+            </div>
+            <div class="uv">
+              <p class="uv">{{current.uv}}</p>
+            </div>
+            <div class="cloud-cover">
+              <p class="cloudcover">{{current.cloud_cover}}</p>
+            </div>
+            <div class="air">
+              <p class="air_quality">{{current.air_quality}}</p>
+            </div>
         </div>
 
         <div class="second-data">
             <h32>Visibility</h32>
             <h32>UV Index</h32>
-            <h32>Air Quality Index</h32>
+            <h32>Cloud Cover</h32>
             <h32>Air Quality</h32>
-            <h33>10 mi</h33>
-            <h34>0</h34>
-            <h35>36</h35>
-            <h36>Good</h36>
         </div>
 
     
