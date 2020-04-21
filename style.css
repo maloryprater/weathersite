@@ -53,7 +53,7 @@ input {
 
 
 .city {
-    font-size: 45px;
+    font-size: 55px;
     font-family: 'oxanium';
     text-align: center;
     margin-top: -46vh;
@@ -700,8 +700,27 @@ h40 {
     width: 100px;
 }
 
+
+.icon_01n {
+    background-image: url("/img/01d.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100px;
+    width: 100px;
+}
+
 .icon_02d {
     background-image: url("/img/02d.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100px;
+    width: 100px;
+}
+
+.icon_02n {
+    background-image: url("/img/01d.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -718,8 +737,26 @@ h40 {
     width: 100px;
 }
 
+.icon_03n {
+    background-image: url("/img/01d.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100px;
+    width: 100px;
+}
+
 .icon_04d {
     background-image: url("/img/04d.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100px;
+    width: 100px;
+}
+
+.icon_04n {
+    background-image: url("/img/01d.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -736,8 +773,27 @@ h40 {
     width: 100px;
 }
 
+.icon_09n {
+    background-image: url("/img/01d.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100px;
+    width: 100px;
+}
+
+
 .icon_10d {
     background-image: url("/img/10d.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100px;
+    width: 100px;
+}
+
+.icon_10n {
+    background-image: url("/img/01d.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -754,8 +810,26 @@ h40 {
     width: 100px;
 }
 
+.icon_11n {
+    background-image: url("/img/01d.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100px;
+    width: 100px;
+}
+
 .icon_13d {
     background-image: url("/img/13d.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100px;
+    width: 100px;
+}
+
+.icon_13n {
+    background-image: url("/img/01d.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -772,14 +846,13 @@ h40 {
     width: 100px;
 }
 
-.icon_11n {
-    background-image: url("/img/11n.png");
+.icon_50n {
+    background-image: url("/img/01d.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     height: 100px;
     width: 100px;
-
 }
 
 
@@ -909,7 +982,23 @@ h40 {
 }
 
 
+h45 {
+    font-size: 65px;
+    font-family: 'oxanium';
+    text-align: center;
+    color:  rgb(41, 2, 49);
+    border:  rgb(41, 2, 49) solid;
+    border-radius: 25px;
+    padding: 20px;
+    margin-left: 40vw;
+    height: 10vh;
+}
 
+.hour-text {
+    margin-top: 7vh;
+    margin-bottom: -4vh;
+    
+}
 
 
 
@@ -939,15 +1028,13 @@ h40 {
     
     
     
-    
-    
-    
     body{
         padding: 0;
         margin: 0;
-        background-color: black;
+        background-color: rgb(41, 2, 49);
         font-family: 'dosis-light';
-        
+        width: 100vw;
+       
     }
     
     
@@ -955,14 +1042,16 @@ h40 {
         display: grid;
         grid-template-columns: 1fr .5fr .5fr;
         grid-gap: 5px;
-        height: 8vh;
-        background-color: rgb(250, 213, 7);
-        background-image: linear-gradient(rgb(250, 213, 7), white);
+        height: 5vh;
+        background-color: orange;
+        background-image: linear-gradient( rgb(41, 2, 49),tomato,orange);
         padding: 5px;
         margin-bottom: 3vh;
         position: fixed;
-        
-        
+        width: 100vw;
+        right: 0;
+        left: 0;
+        z-index: 999;
     }
     
     
@@ -971,12 +1060,13 @@ h40 {
         display: block;
         background-color: white;
         color: black;
-        border: #0E2953 solid 5px;
-        font-size: 30px;
-        height: 2vh;
-        margin-left: 55vw;
-        margin-top: 2vh;
+        border: rgb(41, 2, 49) solid 5px;
+        font-size: 25px;
         position: fixed;
+        margin-left: 65vw;
+        margin-top: 1.5vh;
+        border-radius: 25px;
+        text-align: center;
       }
     
     
@@ -984,38 +1074,123 @@ h40 {
     .location {
         display: grid;
         grid-template-columns: 2fr 2fr 2fr;
-        background-color: #0E2953;
-        height: 70vh;
+        background-color: rgb(41, 2, 49);
+        height: 95vh;
+        padding-left: 5vw;
+        
       
     }
     
     
-    .weather-station {
-        height: 12vh;
-        background-color: #3c6fdf;
-        margin-left: 5vw;
-        margin-right: 3vw;
-        margin-top: 20vh;
-      
+    .city {
+        font-size: 55px;
+        font-family: 'oxanium';
+        text-align: center;
+        margin-top: -53vh;
+        border: tomato solid;
+        color: tomato;
+        margin-bottom: 49vh;
+        border-radius: 25px;
+        padding: 10px;
+        margin-left: -35vw;
+        margin-right: 35vw;
     }
+    
+    .state {
+        font-size: 45px;
+        font-family: 'oxanium';
+        text-align: center; 
+        color: tomato;
+        margin-top: -53vh;
+        margin-left: -35vw;
+        margin-right: 35vw;
+    }
+    
+    
+    
+    
+    
+    
+    .date {
+        font-size: 25px;
+        font-family: 'oxanium';
+        text-align: center; 
+        color: tomato;
+        margin-top: -58vh;
+        margin-left: -70vw;
+    }
+    
+    .time {
+        font-size: 35px;
+        font-family: 'oxanium';
+        text-align: center; 
+        color: tomato;
+        margin-top: -53vh;
+        border-radius: 25px;
+        border: tomato solid;
+        margin-bottom: 50vh;
+        margin-left: -35vw;
+        margin-right: 35vw;
+        
+     
+    }
+    
+    .description_long {
+        font-size: 30px;
+        font-family: 'oxanium';
+        text-align: center; 
+        color:  rgb(41, 2, 49);
+        margin-top: 9vh;
+    
+    }
+    
+    
+    
+    
+    
+    .timeday {
+        font-size: 49px;
+        font-family: 'oxanium';
+        text-align: center; 
+        color: tomato;
+        margin-top: -68vh;
+        margin-left: -70vw;
+    }
+    
+    
+     
+    
+    
+    
+    
+    
+    
     
     .middle {
         display: grid;
         grid-template-rows: .5fr .2fr .5fr;
-        background-color: #0E2953;
-        height: 55vh;
-        margin-top: 15vh;
-        
+        background-color: rgb(41, 2, 49);
+        height: 53vh;
+        margin-top: 42vh;
     }
     
     .current-temp {
-        background-color: #3c6fdf;
-        background-image: linear-gradient(30deg,#3c6fdf, white, #f5eb63);
-        height: 30vh;
-        margin-bottom: 30vh;
-        margin-left: 4vw;
-        margin-right: 4vw;
-        margin-top: 16vh;
+        background-color: #rgb(41, 2, 49);
+        background-image: linear-gradient(30deg,lightsalmon, rgb(248, 233, 144), orange);
+        height: 38vh;
+        border-radius: 25px;
+        margin-left: -22vw;
+        margin-right: 5vw;
+        margin-top: 12vh;
+        padding: 20px;
+        font-size: 20px;
+        font-family: 'oxanium';
+        text-align: center;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-row-gap: 2px;
+        
+        
     }
     
     
@@ -1023,573 +1198,252 @@ h40 {
         font-size: 55px;
         font-family: 'oxanium';
         text-align: left;
-        color: #0E2953;
+        color: rgb(41, 2, 49);
         padding: 15px;
-        margin-top: 1vh;
-        margin-bottom: 1vh;
-        po
+        margin-top: .5vh;
+        
     
     }
     
-    h2 {
-        font-size: 40px;
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        color: #C6E1FF;
-        text-align: center;
-    }
     
-    h3 {
-        font-size: 40px;
-        font-family: 'oxanium';
-        text-align: center;
-        color: #C6E1FF;
-        margin-top: -4vh;
-        border: #C6E1FF solid;
-        height: 6.5vh;
-    }
     
-    h4 {
-        font-size: 30px;
-        font-family: 'oxanium';
-        text-align: center;
-        color: #C6E1FF;
-        margin-top: -16vh;
-    }
     
-    h9 {
-        font-size: 50px;
-        font-family: 'oxanium';
-        text-align: center;
-        color: #C6E1FF;
-        margin-top: -25vh;
-        margin-bottom: -12vh;
-    }
     
-    h5 {
-        font-size: 35px;
-        font-family: 'oxanium';
-        text-align: center;
-        color: black;
-        margin-top: 1vh;
-    }
+    
+    
+    
     
     h6 {
-        font-size: 100px;
-        font-family: 'oxanium';
-        text-align: center;
-        color: black;
-        margin-top: -2vh;
-        margin-bottom: -7vh;
-    }
-    
-    
-    h7 {
-        font-size: 25px;
-        font-family: 'oxanium';
-        text-align: center;
-        color: black;
-        margin-left: 1vw;
-    
-       
-    }
-    
-    .high-low {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        background-color: #0E2953;
-        height: 20.6vh;
-        margin-top: -12vh;
-        
-        
-    }
-    
-    
-    h10 {
-        color: #C6E1FF;
-        border: #C6E1FF solid;
         font-size: 30px;
         font-family: 'oxanium';
         text-align: center;
-        margin-top: -1vh;
-        margin-left: 6vw;
-        height: 9vh;
-    }
-    
-    h11 {
-        color: #C6E1FF;
-        font-size: 50px;
-        font-family: 'oxanium';
-        margin-bottom: 19vh;
-        padding-bottom: 3vh;
-        padding-right: 2.5vw;
-        margin-left: 2vw;
-        
-        
-    }
-    
-    h12 {
-        color: #C6E1FF;
-        border: #C6E1FF solid;
-        font-size: 30px;
-        font-family: 'oxanium';
-        text-align: center;
-        margin-top: -2vh;
-        margin-left: 6vw;
-        height: 9vh;
-    }
-        
-    h13 {
-        color: #C6E1FF;
-        font-size: 50px;
-        font-family: 'oxanium';
-        padding-top: 3vh;
-        padding-bottom: -4vh;
-        padding-right: 2.5vw;
-        margin-left: 2vw;
-        margin-top: -15vh;
-    }
-    
-    h14 {
-        color: black;
-        font-size: 30px;
-        font-family: 'oxanium';
-        text-align: center;
-        margin-left: 30vw;
+        color: orange;
+        margin-top: 1vh;
+        margin-bottom: 20vh;
     }
     
     
     
-    
-    
-    .hourly-times {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 2fr 1fr;
-        background-color: #3c6fdf;
-        height: 30vh;
-        grid-gap: 15px;
-        padding: 30px;
-        padding-left: 100px;
-        padding-right: 100px;
-    
-    }
-    
-    .hourly-temps {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 2fr 1fr;
-        background-color: #3c6fdf;
-        background-color: ;
-        height: 30vh;
-        grid-gap: 15px;
-        padding: 30px;
-        padding-bottom: 9vh;
-        padding-left: 100px;
-        padding-right: 100px;
-        margin-top: -32vh;
-        
-       
-    }
-    
-    
-    
-    h15 {
-        color: #0E2953;
-        font-size: 30px;
-        font-family: 'oxanium';
-        text-align: center;
-        border: #0E2953 solid;
-        margin-bottom: 30vh;
-    }
-    
-    
-    h16 {
-        color: #0E2953;
-        font-size: 60px;
-        font-family: 'oxanium';
-        text-align: center;
-        padding-top: 40px;
-        margin-left: -5vw;
-        
-    }
-    
-    
-    
-    
-    img {
-        margin-left: 4vw;
-        height: 6vh;
-        width: 16vw;
-        margin-top: 8vh;
-        margin-right: -17vw;
-        margin-bottom: 4.5vh;
-      }
-    
-    .icon1 {
-        width: 8vw;
-        height: 8vw;
-        margin-left: -1vw;
-        margin-top: 4vh;
-    }
-    
-    .icon2 {
-        width: 8vw;
-        height: 8vw;
-        margin-left: .1vw;
-        margin-top: 4vh;
-    }
-    
-    .icon3 {
-        width: 11vw;
-        height: 7vw;
-        margin-left: .5vw;
-        margin-top: 4vh;
-    }
-    
-    .icon4 {
-        width: 11vw;
-        height: 9vw;
-        margin-left: .5vw;
-        margin-top: 4vh;
-    }
-    
-    .icon5 {
-        width: 11vw;
-        height: 12vw;
-        margin-left: .5vw;
-        margin-top: 4vh;
-    }
-    
-    .icon6 {
-        width: 8vw;
-        height: 5vw;
-        margin-left: 2vw;
-        margin-top: 5vh;
-    }
-    
-    .icon7 {
-        width: 11vw;
-        height: 7vw;
-        margin-left: .5vw;
-        margin-top: 4vh;
-    }
-    
-    .temps {
-        display: grid;
-        grid-template-columns: .5fr .5fr .5fr .5fr .5fr .5fr .5fr;
-        background-color: #3c6fdf;
-        height: 20vh;
-        width: 86vw;
-        margin-top: -28vh;
-        margin-left: 10vw;
-       
-        
-    }
-    
-    .rise-set {
-        background-color: #3c6fdf;
-        height: 40vh;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 50px;
-        padding-top: 50px;
-        padding-right: 350px;
-        padding-left: 350px;
-    }
-    
-    
-    
-    .rise-set-time {
-        background-color: #3c6fdf;
-        height: 12vh;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-       
-    
-    }
-    
-    h20 {
-        color: #0E2953;
-        font-size: 40px;
-        font-family: 'oxanium';
-        text-align: center;
-        margin-left: 30vw;
-        margin-top: -32vh;
-        border: #0E2953 solid;
-        margin-bottom: 82vh;
-        width: 15vw;
-    }
-    
-    h21 {
-        color: #0E2953;
-        font-size: 40px;
-        font-family: 'oxanium';
-        text-align: center;
-        margin-left: 6vw;
-        margin-top: -32vh;
-        margin-bottom: 82vh;
-        border: #0E2953 solid;
-        width: 15vw;
-        
-    }
     
     .icon8 {
-        width: 15vw;
-        height: 11.5vw;
-        margin-top: -7vh;
-        margin-left: -5vw;
+        margin-top: -11vh;
+        margin-left: 13vw;
     }
     
     .icon9 {
-        width: 15vw;
-        height: 15vw;
-        margin-top: -6.5vh;
+        margin-top: -11vh;
+        margin-left: 6vw;
     }
     
-    .future-weather {
-        background-color: #C6E1FF;
-        height: 60vh;
+    
+    .rise-set {
+        background-color: rgb(248, 233, 144);
+        background-image: linear-gradient(rgb(248, 233, 144), orange);
+        height: 15vh;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        margin-top: -37vh;
-        grid-gap: 25px;
-        padding: 35px;
-        margin-bottom: -50vh;
-    }
-    
-    .tonight {
-        background-color: #0E2953;
-        height: 40vh;
-       
-        
-    }
-    
-    .tomorrow {
-        background-color: #0E2953;
-        height: 40vh;
-       
-    }
-    
-    .tomorrow-night {
-        background-color: #0E2953;
-        height: 40vh;
-       
-    }
-    
-    .icon10 {
-        height: 5vh;
-        width: 5vh;
-        margin-top: -6vh;
-        margin-left: 5vw;
-        
-    
-     
-    }
-    
-    .icon11 {
-        height: 5vh;
-        width: 5vh;
-        margin-top: -6vh;
-        margin-left: 41vw;
-       
-    }
-    
-    .icon12 {
-        height: 5vh;
-        width: 5vh;
-        margin-top: -3vh;
-        margin-left: 40vw;
-    }
-    
-    .words {
-        background-color: #C6E1FF;
-        height: 60vh;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        margin-top: -37vh;
-        grid-gap: 25px;
-        padding: 35px;
-        margin-bottom: -70vh;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 50px;
+        padding-top: 15px;
+        padding-bottom: 4px;
+        margin-top: -15vh;
+        margin-bottom: -1vh;
     }
     
     
-        
-        
     
     
-    h22 {
-        color: #C6E1FF;
-        font-size: 28px;
+    
+    .sunrise {
+        color: rgb(41, 2, 49);
+        font-size: 40px;
         font-family: 'oxanium';
         text-align: center;
-        margin-right: -2vw;
-        margin-top: -13.5vh;
-        
+        margin-left: 30vw;
+        margin-top: 6vh;
+        border: rgb(41, 2, 49) solid;
+        width: 16vw;
+        padding: 15px;
+        border-radius: 25px;
     }
     
-    h23 {
-        color: #C6E1FF;
-        font-size: 20px;
+    .sunset {
+        color: rgb(41, 2, 49);
+        font-size: 40px;
         font-family: 'oxanium';
-        text-align: left;
-        margin-left: 12vw;
-        margin-top: -29vh;
-        
+        text-align: center;
+        margin-left: 23vw;
+        margin-top: 6vh;
+        border: rgb(41, 2, 49) solid;
+        border: rgb(41, 2, 49) solid;
+        width: 16vw;
+        padding: 15px;
+        border-radius: 25px;
     }
     
-    h24 {
-        color: #C6E1FF;
-        font-size: 22px;
-        font-family: 'oxanium';
-        text-align: left;
-        margin-left: 3vw;
-        margin-top: -41vh;
-        
-    }
     
-    h25 {
-        color: #C6E1FF;
-        font-size: 22px;
-        font-family: 'oxanium';
-        text-align: left;
-        margin-left: 3vw;
-        margin-top: -41vh;
-        
-    }
     
-    h26 {
-        color: #C6E1FF;
-        font-size: 22px;
-        font-family: 'oxanium';
-        text-align: left;
-        margin-left: 3vw;
-        margin-top: -41vh;
-        
-    }
     
-    .radar {
-        background-color: #C6E1FF;
-        height: 40vh;
-        margin-top: 25vh;
-        
-       
-    }
     
-    .icon13 {
-        height: 27vh;
-        width: 80vw;
-        margin-left: 10vw;
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
         
-    }
+        
+    
+    
+    
+    
+    
+    
+    
     
     .extra {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        background-color: #C6E1FF;
+        background-color: rgb(41, 2, 49);
         height: 60vh;
         grid-gap: 25px;
-        padding: 30px;
-        padding-left: 10vw;
-        padding-right: 10vw;
         margin-bottom: -45vh;
-        margin-top: -2vh;
+        margin-top: 30vh;
+        width: 100vw;
+       
     }
     
     .humidity {
-        background-color: rgb(250, 213, 7);
-        height: 10vh;
-        border: #0E2953 solid;
-       
-    
+        
+        height: 5vh;
+        background-color: rgb(41, 2, 49);
+        font-size: 70px;
+        font-family: 'oxanium';
+        color: tomato;
+        text-align: center;
+        padding-top: 3vh;
     }
     
-    .wind {
-        background-color: rgb(250, 213, 7);
-        height: 10vh;
-        border: #0E2953 solid;
+    .wind_end {
+      
+        height: 25vh;
+        background-color: rgb(41, 2, 49);
+        font-size: 28px;
+        font-family: 'oxanium';
+        color:  tomato;
+        text-align: center;
+        margin-top: 10vh;
     }
-    
     .precipitation {
-        background-color: rgb(250, 213, 7);
-        height: 10vh;
-        border: #0E2953 solid;
+        height: 25vh;
+        background-color: rgb(41, 2, 49);
+        font-size: 28px;
+        font-family: 'oxanium';
+        color:  tomato;
+        text-align: center;
+        margin-top: 10vh;
     }
     
     .pressure {
-        background-color: rgb(250, 213, 7);
-        height: 10vh;
-        border: #0E2953 solid;
+        height: 25vh;
+        background-color: rgb(41, 2, 49);
+        font-size: 70px;
+        font-family: 'oxanium';
+        color:  tomato;
+        text-align: center;
+        padding-top: 3vh;
     }
     
     .second-line {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        background-color: #C6E1FF;
-        height: 60vh;
+        background-color: rgb(41, 2, 49);
+        width: 100vw;
         grid-gap: 25px;
-        padding: 30px;
-        padding-left: 10vw;
-        padding-right: 10vw;
-        margin-top: -8vh;
+        height: -2vh;
     }
     
     .visibility {
-        background-color: rgb(250, 213, 7);
-        height: 10vh;
-        border: #0E2953 solid;
+        height: 25vh;
+        background-color: rgb(41, 2, 49);
+        font-size: 70px;
+        font-family: 'oxanium';
+        color:  tomato;
+        text-align: center;
+        margin-top: -9vh;
+        
     }
     
     .uv {
-        background-color: rgb(250, 213, 7);
-        height: 10vh;
-        border: #0E2953 solid;
+        height: 18vh;
+        background-color: rgb(41, 2, 49);
+        font-size: 70px;
+        font-family: 'oxanium';
+        color:  tomato;
+        text-align: center;
+        margin-top: -2vh;
     }
     
-    .air-index {
-        background-color: rgb(250, 213, 7);
-        height: 10vh;
-        border: #0E2953 solid;
+    .cloud-cover {
+        height: 25vh;
+        background-color: rgb(41, 2, 49);
+        font-size: 70px;
+        font-family: 'oxanium';
+        color:  tomato;
+        text-align: center;
+        margin-top: -8vh;
     }
     
     .air {
-        background-color: rgb(250, 213, 7);
-        height: 10vh;
-        border: #0E2953 solid;
+        height: 25vh;
+        background-color: rgb(41, 2, 49);
+        font-size: 70px;
+        font-family: 'oxanium';
+        color:  tomato;
+        text-align: center;
+        margin-top: -8vh;
+       
     }
     
     .data {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        background-color: #C6E1FF;
-        height: .1vh;
+        background-color:  rgb(41, 2, 49);
+        height: 12vh;
         grid-gap: 25px;
-        padding: 30px;
-        padding-left: 10vw;
-        padding-right: 10vw;
+        width: 100vw;
+        margin-top: 4vh;
     }
     
     
     h27 {
-        color: black;
-        font-size: 26px;
+        color: rgb(248, 233, 144);
+        font-size: 25px;
         font-family: 'oxanium';
         text-align: center;
-        margin-top: -18vh;
-       
-        
+        margin-top: -16vh;
+        border: rgb(248, 233, 144) solid;
+        width: 15vw;
+        height: 2vh;
+        margin-left: 3.5vw;
+        border-radius: 25px;
+        padding: 14px;
     }
     
     h28 {
-        color: black;
-        font-size: 60px;
+        color:  rgb(41, 2, 49);
+        font-size: 70px;
         font-family: 'oxanium';
         text-align: center;
         margin-top: -17vh;
     }
     
     h29 {
-        color: black;
+        color:  rgb(41, 2, 49);
         font-size: 50px;
         font-family: 'oxanium';
         text-align: center;
@@ -1597,15 +1451,15 @@ h40 {
     }
     
     h30 {
-        color: black;
-        font-size: 60px;
+        color:  rgb(41, 2, 49);
+        font-size: 70px;
         font-family: 'oxanium';
         text-align: center;
         margin-top: -17vh;
     }
     
     h31 {
-        color: black;
+        color:  rgb(41, 2, 49);
         font-size: 50px;
         font-family: 'oxanium';
         text-align: center;
@@ -1615,61 +1469,588 @@ h40 {
     .second-data {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        background-color: #C6E1FF;
-        height: .1vh;
+        background-color:  rgb(41, 2, 49);
         grid-gap: 25px;
-        padding: 30px;
-        padding-left: 10vw;
-        padding-right: 10vw;
+        height: 10vh;
+        margin-top: 7vh;
+        width: 100vw;
     }
     
     h32 {
-        color: black;
-        font-size: 26px;
+        color: rgb(248, 233, 144);
+        font-size: 25px;
         font-family: 'oxanium';
         text-align: center;
-        margin-top: -63vh;
-        
+        margin-top: -34vh;
+        border: rgb(248, 233, 144) solid;
+        width: 15vw;
+        height: 2vh;
+        margin-left: 3.5vw;
+        border-radius: 25px;
+        padding: 14px;
+    
     }
     
-    h33 {
-        color: black;
+    
+    
+    
+    
+    
+    
+    
+    
+    h37 {
+        color:  rgb(41, 2, 49);
         font-size: 50px;
         font-family: 'oxanium';
         text-align: center;
-        margin-top: -60vh;
+        margin-top: -1vh;
         
     }
     
-    h34 {
-        color: black;
-        font-size: 60px;
+    h38 {
+        color:  rgb(41, 2, 49);
+        font-size: 30px;
         font-family: 'oxanium';
-        text-align: center;
-        margin-top: -60vh;
+        text-align: left;
+       margin-top: -7vh;
        
+       
+        
+     
         
     }
     
-    h35 {
-        color: black;
-        font-size: 60px;
+    h39 {
+        color:  rgb(41, 2, 49);
+        font-size: 30px;
         font-family: 'oxanium';
-        text-align: center;
-        margin-top: -60vh;
-       
+        text-align: left;
+        margin-top: -5vh;
         
     }
     
-    h36 {
-        color: black;
+    h40 {
+        color:  rgb(41, 2, 49);
+        font-size: 30px;
+        font-family: 'oxanium';
+        text-align: left;
+       margin-top: -3vh;
+        
+    }
+    
+    
+    
+    
+    
+    
+    .hourly {
+        width: 100vw;
+        margin: auto;
+        margin-bottom: 5vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-column-gap: 10px;
+        font-family: 'oxanium';
+        font-size: 28px;
+        height: 30vh;
+        text-align: center;
+        background-color: rgb(248, 233, 144);
+        background-image: linear-gradient(orange, rgb(248, 233, 144));
+        padding-top: 7vh;
+        
+      }
+      
+    .firsthour {
+        border-radius: 25px;
+        width: 18vw;
+        height: 20vh;
+        background-color:  rgb(41, 2, 49);
+    }
+    
+    
+    
+    .secondhour {
+        border-radius: 25px;
+        width: 18vw;
+        height: 20vh;
+        background-color: rgb(41, 2, 49);
+    }
+    
+    .thirdhour {
+        border-radius: 25px;
+        width: 18vw;
+        height: 20vh;
+        background-color:  rgb(41, 2, 49);
+    }
+    
+    .fourthhour {
+        border-radius: 25px;
+        width: 18vw;
+        height: 20vh;
+        background-color: rgb(41, 2, 49);
+    }
+    
+    .fifthhour {
+        width: 18vw;
+        height: 20vh;
+        background-color:  rgb(41, 2, 49);
+        border-radius: 25px;
+    }
+    
+    
+    .time_hourfc {
+        font-size: 35px;
+        font-family: 'oxanium';
+        text-align: center;
+        margin-top: -1vh;
+        color: lightsalmon;
+    }
+    
+    .temp {
         font-size: 60px;
         font-family: 'oxanium';
         text-align: center;
-        margin-top: -60vh;
-       
+        margin-top: -13vh;
+        color: tomato;
+        margin-bottom: 1vh;
+    }
+    
+    .wind {
+        font-size: 30px;
+        font-family: 'oxanium';
+        text-align: center;
+        margin-top: 4vh;
+        color: salmon;
         
     }
+    
+    .shortforecast {
+        font-size: 20px;
+        font-family: 'oxanium';
+        text-align: center;
+        margin-top: 7vh;
+        color: rgb(248, 233, 144);
+        margin-bottom: 6vh;
+    }
+    
+    
+    
+    
+    
+      .day .description {
+        float: left;
+        width: 80%;
+        text-align: right;
+      }
+      
+      .day .precipitation {
+        /* padding-bottom: 5vh; */
+        float: left;
+        width: 20%;
+        /* padding-top: 5vh; */
+      }
+    
+      .icon_forecast {
+        margin: auto;
+      
+        margin-left: 1vw;
+        margin-top: -20vh;
+       
+    
+    
+      }
+      
+      .day .weekday {
+        float: left;
+        width: 50%;
+        /* padding-bottom: 5vh; */
+      }
+      
+      .day .high_low {
+        float: left;
+        width: 50%;
+        /* padding-bottom: 5vh; */
+        text-align: right;
+        background-color: white;
+      }
+    
+    
+    
+    
+    
+      .degree_symbol_current {
+          height: 4vh;
+          color: tomato;
+        font-size: 90px;
+        font-family: 'oxanium';
+        text-align: center;
+        margin-top: -2vh;
+       
+       
+      }
+    
+      .degree_symbol_feelslike {
+        height: 4vh;
+        color: tomato;
+      font-size: 60px;
+      font-family: 'oxanium';
+      text-align: right;
+      margin-top: -9vh;
+      margin-bottom: -37vh;
+      }
+    
+      .degree_symbol_high {
+        
+        height: 4vh;
+        color: tomato;
+      font-size: 60px;
+      font-family: 'oxanium';
+      text-align: right;
+      margin-top: -7vh;
+      margin-bottom: -37vh;
+      }
+    
+      .degree_symbol_low {
+        height: 4vh;
+        color: tomato;
+      font-size: 60px;
+      font-family: 'oxanium';
+      text-align: right;
+      margin-top: -5vh;
+      margin-bottom: -37vh;
+      }
+    
+    
+    
+    
+      .icon_01d {
+        background-image: url("/img/01d.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 100px;
+        width: 100px;
+    }
+    
+    .icon_01n {
+        background-image: url("/img/01d.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 100px;
+        width: 100px;
+    }
+    
+    .icon_02d {
+        background-image: url("/img/02d.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 100px;
+        width: 100px;
+    }
+    
+    .icon_02n {
+        background-image: url("/img/01d.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 100px;
+        width: 100px;
+    }
+    
+    .icon_03d {
+        background-image: url("/img/03d.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 100px;
+        width: 100px;
+    }
+    
+    .icon_03n {
+        background-image: url("/img/01d.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 100px;
+        width: 100px;
+    }
+    
+    .icon_04d {
+        background-image: url("/img/04d.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 100px;
+        width: 100px;
+    }
+    
+    .icon_04n {
+        background-image: url("/img/01d.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 100px;
+        width: 100px;
+    }
+    
+    .icon_09d {
+        background-image: url("/img/09d.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 100px;
+        width: 100px;
+    }
+    
+    .icon_09n {
+        background-image: url("/img/01d.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 100px;
+        width: 100px;
+    }
+    
+    
+    .icon_10d {
+        background-image: url("/img/10d.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 100px;
+        width: 100px;
+    }
+    
+    .icon_10n {
+        background-image: url("/img/01d.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 100px;
+        width: 100px;
+    }
+    
+    .icon_11d {
+        background-image: url("/img/11d.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 100px;
+        width: 100px;
+    }
+    
+    .icon_11n {
+        background-image: url("/img/01d.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 100px;
+        width: 100px;
+    }
+    
+    .icon_13d {
+        background-image: url("/img/13d.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 100px;
+        width: 100px;
+    }
+    
+    .icon_13n {
+        background-image: url("/img/01d.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 100px;
+        width: 100px;
+    }
+    
+    .icon_50d {
+        background-image: url("/img/50d.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 100px;
+        width: 100px;
+    }
+    
+    .icon_50n {
+        background-image: url("/img/01d.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 100px;
+        width: 100px;
+    }
+    
+    
+    
+    
+    
+    .degree {
+        font-size: 65px;
+        font-family: 'oxanium';
+        text-align: center;
+        color: tomato;
+        margin-top: -33vh;
+    }
+    
+    .forecast {
+        
+        height: 30vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        font-family: 'oxanium';
+        font-size: 8px;
+        text-align: center;
+        grid-gap: 5px;
+        padding: 30px;
+        background-color: orange;
+        margin-bottom: -30vh;
+    }
+    
+    
+    
+    .day2 {
+        background-color: rgb(41, 2, 49);
+        height: 30vh;
+        width: 19vw;
+        color: black;
+        border-radius: 20px;
+    }
+    
+    .day3 {
+        background-color: rgb(41, 2, 49);
+        height: 30vh;
+        color: black;
+        border-radius: 25px;
+        width: 19vw;
+    }
+    
+    
+    .day4 {
+        background-color: rgb(41, 2, 49);
+        height: 30vh;
+        color: black;
+        border-radius: 25px;
+        width: 19vw;
+    }
+    
+    
+    .day5 {
+        background-color: rgb(41, 2, 49);
+        height: 30vh;
+        color: black;
+        border-radius: 25px;
+        width: 19vw;
+    }
+    
+    
+    .day6 {
+        background-color: rgb(41, 2, 49);
+        height: 30vh;
+        width: 19vw;
+        border-radius: 25px;
+    }
+    
+    
+    
+    .degree_symbol_fchigh {
+        font-size: 25px;
+        font-family: 'oxanium';
+        text-align: center;
+        color: orange;
+        margin-top: 4vh;
+       
+    }
+    
+    .degree_symbol_fclow {
+        font-size: 25px;
+        font-family: 'oxanium';
+        text-align: center;
+        color: tomato;
+        margin-top: -2vh;
+       
+    }
+    
+    
+      .weather-description {
+        font-size: 25px;
+        font-family: 'oxanium';
+        text-align: center;
+        color: rgb(248, 233, 144);
+        margin-top: -7vh;
+    
+        
+      }
+    
+    
+      #map {
+        width: 400px;
+        height: 600px;
+        background-position: center;
+        margin-top: 58vh;
+       position: -webkit-sticky;
+       
+        
+      }
+    
+    
+      .degree_symbol:not(:empty)::after {
+        content: "°";
+      }
+    
+    
+    .icon {
+        margin: auto;
+        margin-top: 80vh;
+        width: 100px;
+        height: 50px;
+        margin-bottom: 10vh;
+        margin-top: 1vh;
+    }
+    
+    h45 {
+        font-size: 65px;
+        font-family: 'oxanium';
+        text-align: center;
+        color:  rgb(41, 2, 49);
+        border:  rgb(41, 2, 49) solid;
+        border-radius: 25px;
+        padding: 20px;
+        margin-left: 40vw;
+        height: 10vh;
+    }
+    
+    .hour-text {
+        margin-top: 7vh;
+        margin-bottom: -4vh;
+        
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1687,9 +2068,10 @@ h40 {
     body{
         padding: 0;
         margin: 0;
-        background-color: grey;
+        background-color: rgb(248, 233, 144);
         font-family: 'dosis-light';
-        
+        width: 100vw;
+       
     }
     
     
@@ -1697,14 +2079,16 @@ h40 {
         display: grid;
         grid-template-columns: 1fr .5fr .5fr;
         grid-gap: 5px;
-        height: 8vh;
-        background-color: rgb(250, 213, 7);
-        background-image: linear-gradient(rgb(250, 213, 7), white);
+        height: 6vh;
+        background-color: orange;
+        background-image: linear-gradient( rgb(41, 2, 49),tomato,orange);
         padding: 5px;
         margin-bottom: 3vh;
         position: fixed;
-        
-        
+        width: 100vw;
+        right: 0;
+        left: 0;
+        z-index: 999;
     }
     
     
@@ -1713,12 +2097,13 @@ h40 {
         display: block;
         background-color: white;
         color: black;
-        border: #0E2953 solid 5px;
-        font-size: 30px;
-        height: 3vh;
-        margin-left: 55vw;
-        margin-top: 2vh;
+        border: rgb(41, 2, 49) solid 5px;
+        font-size: 25px;
         position: fixed;
+        margin-left: 65vw;
+        margin-top: 1.5vh;
+        border-radius: 25px;
+        text-align: center;
       }
     
     
@@ -1726,38 +2111,124 @@ h40 {
     .location {
         display: grid;
         grid-template-columns: 2fr 2fr 2fr;
-        background-color: #0E2953;
-        height: 90vh;
+        background-color: rgb(41, 2, 49);
+        height: 95vh;
+        padding-left: 5vw;
+        
       
     }
     
     
-    .weather-station {
-        height: 16vh;
-        background-color: #3c6fdf;
-        margin-left: 5vw;
-        margin-right: 3vw;
-        margin-top: 20vh;
-      
+    .city {
+        font-size: 55px;
+        font-family: 'oxanium';
+        text-align: center;
+        margin-top: -33vh;
+        border: tomato solid;
+        color: tomato;
+        margin-bottom: 37vh;
+        border-radius: 25px;
+        padding: 10px;
+        margin-left: -35vw;
+        margin-right: 35vw;
+        height: 19vh;
     }
+    
+    .state {
+        font-size: 45px;
+        font-family: 'oxanium';
+        text-align: center; 
+        color: tomato;
+        margin-top: -41.5vh;
+        margin-left: -35vw;
+        margin-right: 35vw;
+    }
+    
+    
+    
+    
+    
+    
+    .date {
+        font-size: 30px;
+        font-family: 'oxanium';
+        text-align: center; 
+        color: tomato;
+        margin-top: -28vh;
+        margin-left: -70vw;
+    }
+    
+    .time {
+        font-size: 35px;
+        font-family: 'oxanium';
+        text-align: center; 
+        color: tomato;
+        margin-top: -22vh;
+        border-radius: 25px;
+        border: tomato solid;
+        margin-bottom: 50vh;
+        margin-left: -35vw;
+        margin-right: 35vw;
+        
+     
+    }
+    
+    .description_long {
+        font-size: 40px;
+        font-family: 'oxanium';
+        text-align: center; 
+        color:  rgb(41, 2, 49);
+        margin-top: 9vh;
+    
+    }
+    
+    
+    
+    
+    
+    .timeday {
+        font-size: 49px;
+        font-family: 'oxanium';
+        text-align: center; 
+        color: tomato;
+        margin-top: -38vh;
+        margin-left: -70vw;
+    }
+    
+    
+     
+    
+    
+    
+    
+    
+    
     
     .middle {
         display: grid;
         grid-template-rows: .5fr .2fr .5fr;
-        background-color: #0E2953;
-        height: 70vh;
-        margin-top: 15vh;
-        
+        background-color: rgb(41, 2, 49);
+        height: 53vh;
+        margin-top: 42vh;
     }
     
     .current-temp {
-        background-color: #3c6fdf;
-        background-image: linear-gradient(30deg,#3c6fdf, white, #f5eb63);
-        height: 30vh;
-        margin-bottom: 30vh;
-        margin-left: 4vw;
-        margin-right: 4vw;
-        margin-top: 16vh;
+        background-color: #rgb(41, 2, 49);
+        background-image: linear-gradient(30deg,lightsalmon, rgb(248, 233, 144), orange);
+        height: 55vh;
+        border-radius: 25px;
+        margin-left: -22vw;
+        margin-right: 5vw;
+        margin-top: 12vh;
+        padding: 20px;
+        font-size: 20px;
+        font-family: 'oxanium';
+        text-align: center;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-row-gap: 2px;
+        
+        
     }
     
     
@@ -1765,560 +2236,244 @@ h40 {
         font-size: 55px;
         font-family: 'oxanium';
         text-align: left;
-        color: #0E2953;
+        color: rgb(41, 2, 49);
         padding: 15px;
-        margin-top: 1vh;
-        margin-bottom: 1vh;
-        po
+        margin-top: .5vh;
+        
     
     }
     
-    h2 {
-        font-size: 40px;
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        color: #C6E1FF;
-        text-align: center;
-    }
     
-    h3 {
-        font-size: 40px;
-        font-family: 'oxanium';
-        text-align: center;
-        color: #C6E1FF;
-        margin-top: -4vh;
-        border: #C6E1FF solid;
-        height: 6.5vh;
-    }
     
-    h4 {
-        font-size: 30px;
-        font-family: 'oxanium';
-        text-align: center;
-        color: #C6E1FF;
-        margin-top: -20vh;
-    }
     
-    h9 {
-        font-size: 50px;
-        font-family: 'oxanium';
-        text-align: center;
-        color: #C6E1FF;
-        margin-top: -30vh;
-    }
     
-    h5 {
-        font-size: 35px;
-        font-family: 'oxanium';
-        text-align: center;
-        color: black;
-        margin-top: 1vh;
-    }
+    
+    
+    
     
     h6 {
-        font-size: 100px;
-        font-family: 'oxanium';
-        text-align: center;
-        color: black;
-        margin-top: -5vh;
-        margin-bottom: -7vh;
-    }
-    
-    
-    h7 {
         font-size: 30px;
         font-family: 'oxanium';
         text-align: center;
-        color: black;
-        margin-left: 1vw;
-    
-       
-    }
-    
-    .high-low {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        background-color: 0E2953;
-        height: 25vh;
-    }
-    
-    
-    h10 {
-        color: #C6E1FF;
-        border: #C6E1FF solid;
-        font-size: 30px;
-        font-family: 'oxanium';
-        text-align: center;
-        margin-top: -1vh;
-        margin-left: 6vw;
-        height: 9vh;
-    }
-    
-    h11 {
-        color: #C6E1FF;
-        font-size: 50px;
-        font-family: 'oxanium';
-        margin-top: -9vh;
-        padding-bottom: 3vh;
-        padding-right: 2.5vw;
-        margin-left: 2vw;
-        
-        
-    }
-    
-    h12 {
-        color: #C6E1FF;
-        border: #C6E1FF solid;
-        font-size: 30px;
-        font-family: 'oxanium';
-        text-align: center;
-        margin-top: -2vh;
-        margin-left: 6vw;
-        height: 9vh;
-    }
-        
-    h13 {
-        color: #C6E1FF;
-        font-size: 50px;
-        font-family: 'oxanium';
-        padding-top: 3vh;
-        padding-bottom: -4vh;
-        padding-right: 2.5vw;
-        margin-left: 2vw;
-        margin-top: -15vh;
-    }
-    
-    h14 {
-        color: black;
-        font-size: 30px;
-        font-family: 'oxanium';
-        text-align: center;
-        margin-left: 30vw;
+        color: orange;
+        margin-top: 1vh;
+        margin-bottom: 20vh;
     }
     
     
     
-    
-    
-    .hourly-times {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 2fr 1fr;
-        background-color: #3c6fdf;
-        height: 30vh;
-        grid-gap: 15px;
-        padding: 30px;
-        padding-left: 100px;
-        padding-right: 100px;
-    
-    }
-    
-    .hourly-temps {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 2fr 1fr;
-        background-color: #3c6fdf;
-        background-color: ;
-        height: 30vh;
-        grid-gap: 15px;
-        padding: 30px;
-        padding-bottom: 9vh;
-        padding-left: 100px;
-        padding-right: 100px;
-        margin-top: -32vh;
-        
-       
-    }
-    
-    
-    
-    h15 {
-        color: #0E2953;
-        font-size: 30px;
-        font-family: 'oxanium';
-        text-align: center;
-        border: #0E2953 solid;
-        margin-bottom: 30vh;
-    }
-    
-    
-    h16 {
-        color: #0E2953;
-        font-size: 60px;
-        font-family: 'oxanium';
-        text-align: center;
-        padding-top: 40px;
-        margin-left: -5vw;
-        
-    }
-    
-    
-    
-    
-    img {
-        margin-left: 4vw;
-        height: 7vh;
-        width: 14vw;
-        margin-top: 8vh;
-        margin-right: -17vw;
-        margin-bottom: 4.5vh;
-      }
-    
-    .icon1 {
-        width: 8vw;
-        height: 8vw;
-        margin-left: -1vw;
-        margin-top: 4vh;
-    }
-    
-    .icon2 {
-        width: 8vw;
-        height: 8vw;
-        margin-left: .1vw;
-        margin-top: 4vh;
-    }
-    
-    .icon3 {
-        width: 11vw;
-        height: 7vw;
-        margin-left: .5vw;
-        margin-top: 4vh;
-    }
-    
-    .icon4 {
-        width: 11vw;
-        height: 9vw;
-        margin-left: .5vw;
-        margin-top: 4vh;
-    }
-    
-    .icon5 {
-        width: 11vw;
-        height: 12vw;
-        margin-left: .5vw;
-        margin-top: 4vh;
-    }
-    
-    .icon6 {
-        width: 8vw;
-        height: 5vw;
-        margin-left: 2vw;
-        margin-top: 5vh;
-    }
-    
-    .icon7 {
-        width: 11vw;
-        height: 7vw;
-        margin-left: .5vw;
-        margin-top: 4vh;
-    }
-    
-    .temps {
-        display: grid;
-        grid-template-columns: .5fr .5fr .5fr .5fr .5fr .5fr .5fr;
-        background-color: #3c6fdf;
-        height: 20vh;
-        width: 86vw;
-        margin-top: -28vh;
-        margin-left: 10vw;
-       
-        
-    }
-    
-    .rise-set {
-        background-color: #3c6fdf;
-        height: 40vh;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 50px;
-        padding-top: 50px;
-        padding-right: 350px;
-        padding-left: 350px;
-    }
-    
-    
-    
-    .rise-set-time {
-        background-color: #3c6fdf;
-        height: 12vh;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-       
-    
-    }
-    
-    h20 {
-        color: #0E2953;
-        font-size: 40px;
-        font-family: 'oxanium';
-        text-align: center;
-        margin-left: 30vw;
-        margin-top: -32vh;
-        border: #0E2953 solid;
-        margin-bottom: 82vh;
-        width: 15vw;
-    }
-    
-    h21 {
-        color: #0E2953;
-        font-size: 40px;
-        font-family: 'oxanium';
-        text-align: center;
-        margin-left: 6vw;
-        margin-top: -32vh;
-        margin-bottom: 82vh;
-        border: #0E2953 solid;
-        width: 15vw;
-        
-    }
     
     .icon8 {
-        width: 15vw;
-        height: 11.5vw;
-        margin-top: -7vh;
-        margin-left: -5vw;
+        margin-top: -16vh;
+        margin-left: 13vw;
     }
     
     .icon9 {
-        width: 15vw;
-        height: 15vw;
-        margin-top: -6.5vh;
-    }
-    
-    .future-weather {
-        background-color: #C6E1FF;
-        height: 60vh;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        margin-top: -37vh;
-        grid-gap: 25px;
-        padding: 35px;
-        margin-bottom: -50vh;
-    }
-    
-    .tonight {
-        background-color: #0E2953;
-        height: 40vh;
-       
-        
-    }
-    
-    .tomorrow {
-        background-color: #0E2953;
-        height: 40vh;
-       
-    }
-    
-    .tomorrow-night {
-        background-color: #0E2953;
-        height: 40vh;
-       
-    }
-    
-    .icon10 {
-        height: 10vh;
-        width: 5vh;
-        margin-top: -20vh;
-        margin-left: 5vw;
-        
-    
-     
-    }
-    
-    .icon11 {
-        height: 6vh;
-        width: 6vh;
         margin-top: -16vh;
-        margin-left: 41vw;
-       
+        margin-left: 6vw;
     }
     
-    .icon12 {
-        height: 6vh;
-        width: 6vh;
-        margin-top: -6vh;
-        margin-left: 40vw;
-    }
     
-    .words {
-        background-color: #C6E1FF;
-        height: 60vh;
+    .rise-set {
+        background-color: rgb(248, 233, 144);
+        background-image: linear-gradient(rgb(248, 233, 144), orange);
+        height: 15vh;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        margin-top: -37vh;
-        grid-gap: 25px;
-        padding: 35px;
-        margin-bottom: -70vh;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 50px;
+        padding-top: 15px;
+        padding-bottom: 4px;
+        margin-top: -15vh;
+        margin-bottom: -1vh;
     }
     
     
-        
-        
     
     
-    h22 {
-        color: #C6E1FF;
-        font-size: 24px;
+    
+    .sunrise {
+        color: rgb(41, 2, 49);
+        font-size: 40px;
         font-family: 'oxanium';
         text-align: center;
-        margin-right: -8vw;
-        margin-top: -13vh;
-        
+        margin-left: 30vw;
+        margin-top: 6vh;
+        border: rgb(41, 2, 49) solid;
+        width: 16vw;
+        padding: 15px;
+        border-radius: 25px;
     }
     
-    h23 {
-        color: #C6E1FF;
-        font-size: 20px;
+    .sunset {
+        color: rgb(41, 2, 49);
+        font-size: 40px;
         font-family: 'oxanium';
-        text-align: left;
-        margin-left: 12vw;
-        margin-top: -30vh;
-        
+        text-align: center;
+        margin-left: 23vw;
+        margin-top: 6vh;
+        border: rgb(41, 2, 49) solid;
+        border: rgb(41, 2, 49) solid;
+        width: 16vw;
+        padding: 15px;
+        border-radius: 25px;
     }
     
-    h24 {
-        color: #C6E1FF;
-        font-size: 22px;
-        font-family: 'oxanium';
-        text-align: left;
-        margin-left: 3vw;
-        margin-top: -41vh;
-        
-    }
     
-    h25 {
-        color: #C6E1FF;
-        font-size: 22px;
-        font-family: 'oxanium';
-        text-align: left;
-        margin-left: 3vw;
-        margin-top: -41vh;
-        
-    }
     
-    h26 {
-        color: #C6E1FF;
-        font-size: 22px;
-        font-family: 'oxanium';
-        text-align: left;
-        margin-left: 3vw;
-        margin-top: -41vh;
-        
-    }
     
-    .radar {
-        background-color: #C6E1FF;
-        height: 40vh;
-        margin-top: 25vh;
-        
-       
-    }
     
-    .icon13 {
-        height: 30vh;
-        width: 80vw;
-        margin-left: 10vw;
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
         
-    }
+        
+    
+    
+    
+    
+    
+    
+    
     
     .extra {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        background-color: #C6E1FF;
+        background-color: rgb(41, 2, 49);
         height: 60vh;
         grid-gap: 25px;
-        padding: 30px;
-        padding-left: 10vw;
-        padding-right: 10vw;
         margin-bottom: -45vh;
-        margin-top: -2vh;
+        margin-top: 30vh;
+        width: 100vw;
+       
     }
     
     .humidity {
-        background-color: rgb(250, 213, 7);
-        height: 15vh;
-        border: #0E2953 solid;
-       
-    
+        
+        height: 5vh;
+        background-color: rgb(41, 2, 49);
+        font-size: 70px;
+        font-family: 'oxanium';
+        color: tomato;
+        text-align: center;
+        padding-top: 3vh;
     }
     
-    .wind {
-        background-color: rgb(250, 213, 7);
-        height: 15vh;
-        border: #0E2953 solid;
+    .wind_end {
+      
+        height: 25vh;
+        background-color: rgb(41, 2, 49);
+        font-size: 28px;
+        font-family: 'oxanium';
+        color:  tomato;
+        text-align: center;
+        margin-top: 10vh;
     }
-    
     .precipitation {
-        background-color: rgb(250, 213, 7);
-        height: 15vh;
-        border: #0E2953 solid;
+        height: 25vh;
+        background-color: rgb(41, 2, 49);
+        font-size: 28px;
+        font-family: 'oxanium';
+        color:  tomato;
+        text-align: center;
+        margin-top: 10vh;
     }
     
     .pressure {
-        background-color: rgb(250, 213, 7);
-        height: 15vh;
-        border: #0E2953 solid;
+        height: 25vh;
+        background-color: rgb(41, 2, 49);
+        font-size: 70px;
+        font-family: 'oxanium';
+        color:  tomato;
+        text-align: center;
+        padding-top: 3vh;
     }
     
     .second-line {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        background-color: #C6E1FF;
-        height: 60vh;
+        background-color: rgb(41, 2, 49);
+        width: 100vw;
         grid-gap: 25px;
-        padding: 30px;
-        padding-left: 10vw;
-        padding-right: 10vw;
+        height: -2vh;
     }
     
     .visibility {
-        background-color: rgb(250, 213, 7);
-        height: 15vh;
-        border: #0E2953 solid;
+        height: 25vh;
+        background-color: rgb(41, 2, 49);
+        font-size: 70px;
+        font-family: 'oxanium';
+        color:  tomato;
+        text-align: center;
+        margin-top: -9vh;
+        
     }
     
     .uv {
-        background-color: rgb(250, 213, 7);
-        height: 15vh;
-        border: #0E2953 solid;
+        height: 18vh;
+        background-color: rgb(41, 2, 49);
+        font-size: 70px;
+        font-family: 'oxanium';
+        color:  tomato;
+        text-align: center;
+        margin-top: -2vh;
     }
     
-    .air-index {
-        background-color: rgb(250, 213, 7);
-        height: 15vh;
-        border: #0E2953 solid;
+    .cloud-cover {
+        height: 25vh;
+        background-color: rgb(41, 2, 49);
+        font-size: 70px;
+        font-family: 'oxanium';
+        color:  tomato;
+        text-align: center;
+        margin-top: -8vh;
     }
     
     .air {
-        background-color: rgb(250, 213, 7);
-        height: 15vh;
-        border: #0E2953 solid;
+        height: 25vh;
+        background-color: rgb(41, 2, 49);
+        font-size: 70px;
+        font-family: 'oxanium';
+        color:  tomato;
+        text-align: center;
+        margin-top: -8vh;
+       
     }
     
     .data {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        background-color: #C6E1FF;
-        height: .1vh;
+        background-color:  rgb(41, 2, 49);
+        height: 12vh;
         grid-gap: 25px;
-        padding: 30px;
-        padding-left: 10vw;
-        padding-right: 10vw;
+        width: 100vw;
+        margin-top: 4vh;
     }
     
     
     h27 {
-        color: black;
-        font-size: 26px;
+        color: rgb(248, 233, 144);
+        font-size: 25px;
         font-family: 'oxanium';
         text-align: center;
-        margin-top: -19vh;
-       
-        
+        margin-top: -16vh;
+        border: rgb(248, 233, 144) solid;
+        width: 15vw;
+        height: 2vh;
+        margin-left: 3.5vw;
+        border-radius: 25px;
+        padding: 14px;
     }
     
     h28 {
-        color: black;
+        color:  rgb(41, 2, 49);
         font-size: 70px;
         font-family: 'oxanium';
         text-align: center;
@@ -2326,7 +2481,7 @@ h40 {
     }
     
     h29 {
-        color: black;
+        color:  rgb(41, 2, 49);
         font-size: 50px;
         font-family: 'oxanium';
         text-align: center;
@@ -2334,7 +2489,7 @@ h40 {
     }
     
     h30 {
-        color: black;
+        color:  rgb(41, 2, 49);
         font-size: 70px;
         font-family: 'oxanium';
         text-align: center;
@@ -2342,7 +2497,7 @@ h40 {
     }
     
     h31 {
-        color: black;
+        color:  rgb(41, 2, 49);
         font-size: 50px;
         font-family: 'oxanium';
         text-align: center;
@@ -2352,59 +2507,566 @@ h40 {
     .second-data {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        background-color: #C6E1FF;
-        height: .1vh;
+        background-color:  rgb(41, 2, 49);
         grid-gap: 25px;
-        padding: 30px;
-        padding-left: 10vw;
-        padding-right: 10vw;
+        height: 10vh;
+        margin-top: 7vh;
+        width: 100vw;
     }
     
     h32 {
-        color: black;
-        font-size: 26px;
+        color: rgb(248, 233, 144);
+        font-size: 25px;
         font-family: 'oxanium';
         text-align: center;
-        margin-top: -64vh;
+        margin-top: -34vh;
+        border: rgb(248, 233, 144) solid;
+        width: 15vw;
+        height: 2vh;
+        margin-left: 3.5vw;
+        border-radius: 25px;
+        padding: 14px;
+    
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    h37 {
+        color:  rgb(41, 2, 49);
+        font-size: 50px;
+        font-family: 'oxanium';
+        text-align: center;
+        margin-top: -1vh;
         
     }
     
-    h33 {
-        color: black;
+    h38 {
+        color:  rgb(41, 2, 49);
+        font-size: 30px;
+        font-family: 'oxanium';
+        text-align: left;
+       margin-top: -3vh;
+       
+       
+        
+     
+        
+    }
+    
+    h39 {
+        color:  rgb(41, 2, 49);
+        font-size: 30px;
+        font-family: 'oxanium';
+        text-align: left;
+        margin-top: -3vh;
+        
+    }
+    
+    h40 {
+        color:  rgb(41, 2, 49);
+        font-size: 30px;
+        font-family: 'oxanium';
+        text-align: left;
+       margin-top: -3vh;
+        
+    }
+    
+    
+    
+    
+    
+    
+    .hourly {
+        width: 100vw;
+        margin: auto;
+        margin-bottom: 5vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-column-gap: 10px;
+        font-family: 'oxanium';
+        font-size: 28px;
+        height: 40vh;
+        text-align: center;
+        background-color: rgb(248, 233, 144);
+        background-image: linear-gradient(orange, rgb(248, 233, 144));
+        padding-top: 7vh;
+        
+      }
+      
+    .firsthour {
+        border-radius: 25px;
+        width: 18vw;
+        height: 30vh;
+        background-color:  rgb(41, 2, 49);
+    }
+    
+    
+    
+    .secondhour {
+        border-radius: 25px;
+        width: 18vw;
+        height: 30vh;
+        background-color: rgb(41, 2, 49);
+    }
+    
+    .thirdhour {
+        border-radius: 25px;
+        width: 18vw;
+        height: 30vh;
+        background-color:  rgb(41, 2, 49);
+    }
+    
+    .fourthhour {
+        border-radius: 25px;
+        width: 18vw;
+        height: 30vh;
+        background-color: rgb(41, 2, 49);
+    }
+    
+    .fifthhour {
+        width: 18vw;
+        height: 30vh;
+        background-color:  rgb(41, 2, 49);
+        border-radius: 25px;
+    }
+    
+    
+    .time_hourfc {
+        font-size: 35px;
+        font-family: 'oxanium';
+        text-align: center;
+        margin-top: -1vh;
+        color: lightsalmon;
+    }
+    
+    .temp {
         font-size: 60px;
         font-family: 'oxanium';
         text-align: center;
-        margin-top: -60vh;
+        margin-top: -15vh;
+        color: tomato;
+        margin-bottom: 1vh;
+    }
+    
+    .wind {
+        font-size: 30px;
+        font-family: 'oxanium';
+        text-align: center;
+        margin-top: 4vh;
+        color: salmon;
         
     }
     
-    h34 {
-        color: black;
-        font-size: 70px;
+    .shortforecast {
+        font-size: 20px;
         font-family: 'oxanium';
         text-align: center;
-        margin-top: -60vh;
+        margin-top: 9vh;
+        color: rgb(248, 233, 144);
+        margin-bottom: 6vh;
+    }
+    
+    
+    
+    
+    
+      .day .description {
+        float: left;
+        width: 80%;
+        text-align: right;
+      }
+      
+      .day .precipitation {
+        /* padding-bottom: 5vh; */
+        float: left;
+        width: 20%;
+        /* padding-top: 5vh; */
+      }
+    
+      
+      
+      .day .weekday {
+        float: left;
+        width: 50%;
+        /* padding-bottom: 5vh; */
+      }
+      
+      .day .high_low {
+        float: left;
+        width: 50%;
+        /* padding-bottom: 5vh; */
+        text-align: right;
+        background-color: white;
+      }
+    
+    
+    
+    
+    
+      .degree_symbol_current {
+          height: 4vh;
+          color: tomato;
+        font-size: 90px;
+        font-family: 'oxanium';
+        text-align: center;
+        margin-top: -6vh;
        
+       
+      }
+    
+      .degree_symbol_feelslike {
+        height: 4vh;
+        color: tomato;
+      font-size: 60px;
+      font-family: 'oxanium';
+      text-align: right;
+      margin-top: -7vh;
+      margin-bottom: -37vh;
+      }
+    
+      .degree_symbol_high {
+        
+        height: 4vh;
+        color: tomato;
+      font-size: 60px;
+      font-family: 'oxanium';
+      text-align: right;
+      margin-top: -7vh;
+      margin-bottom: -37vh;
+      }
+    
+      .degree_symbol_low {
+        height: 4vh;
+        color: tomato;
+      font-size: 60px;
+      font-family: 'oxanium';
+      text-align: right;
+      margin-top: -7vh;
+      margin-bottom: -37vh;
+      }
+    
+    
+    
+    
+      .icon_01d {
+        background-image: url("/img/01d.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 100px;
+        width: 100px;
+    }
+    
+    .icon_01n {
+        background-image: url("/img/01d.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 100px;
+        width: 100px;
+    }
+    
+    .icon_02d {
+        background-image: url("/img/02d.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 100px;
+        width: 100px;
+    }
+    
+    .icon_02n {
+        background-image: url("/img/01d.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 100px;
+        width: 100px;
+    }
+    
+    .icon_03d {
+        background-image: url("/img/03d.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 100px;
+        width: 100px;
+    }
+    
+    .icon_03n {
+        background-image: url("/img/01d.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 100px;
+        width: 100px;
+    }
+    
+    .icon_04d {
+        background-image: url("/img/04d.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 100px;
+        width: 100px;
+    }
+    
+    .icon_04n {
+        background-image: url("/img/01d.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 100px;
+        width: 100px;
+    }
+    
+    .icon_09d {
+        background-image: url("/img/09d.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 100px;
+        width: 100px;
+    }
+    
+    .icon_09n {
+        background-image: url("/img/01d.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 100px;
+        width: 100px;
+    }
+    
+    
+    .icon_10d {
+        background-image: url("/img/10d.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 100px;
+        width: 100px;
+    }
+    
+    .icon_10n {
+        background-image: url("/img/01d.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 100px;
+        width: 100px;
+    }
+    
+    .icon_11d {
+        background-image: url("/img/11d.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 100px;
+        width: 100px;
+    }
+    
+    .icon_11n {
+        background-image: url("/img/01d.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 100px;
+        width: 100px;
+    }
+    
+    .icon_13d {
+        background-image: url("/img/13d.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 100px;
+        width: 100px;
+    }
+    
+    .icon_13n {
+        background-image: url("/img/01d.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 100px;
+        width: 100px;
+    }
+    
+    .icon_50d {
+        background-image: url("/img/50d.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 100px;
+        width: 100px;
+    }
+    
+    .icon_50n {
+        background-image: url("/img/01d.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 100px;
+        width: 100px;
+    }
+    
+    
+    
+    
+    
+    .degree {
+        font-size: 65px;
+        font-family: 'oxanium';
+        text-align: center;
+        color: tomato;
+        margin-top: -33vh;
+    }
+    
+    .forecast {
+        
+        height: 40vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        font-family: 'oxanium';
+        font-size: 8px;
+        text-align: center;
+        grid-gap: 5px;
+        padding: 30px;
+        background-color: orange;
+        margin-bottom: -30vh;
+    }
+    
+    .icon_forecast {
+        margin: auto;
+      
+        margin-left: 2vw;
+        margin-top: -32vh;
+       
+    
+    
+      }
+    
+    
+    .day2 {
+        background-color: rgb(41, 2, 49);
+        height: 40vh;
+        color: black;
+        border-radius: 25px;
+        width: 19vw;
+    }
+    
+    .day3 {
+        background-color: rgb(41, 2, 49);
+        height: 40vh;
+        color: black;
+        border-radius: 25px;
+        width: 19vw;
+    }
+    
+    
+    .day4 {
+        background-color: rgb(41, 2, 49);
+        height: 40vh;
+        color: black;
+        border-radius: 25px;
+        width: 19vw;
+    }
+    
+    
+    .day5 {
+        background-color: rgb(41, 2, 49);
+        height: 40vh;
+        color: black;
+        border-radius: 25px;
+        width: 19vw;
+    }
+    
+    
+    .day6 {
+        background-color: rgb(41, 2, 49);
+        height: 40vh;
+        width: 19vw;
+        border-radius: 25px;
+    }
+    
+    
+    
+    .degree_symbol_fchigh {
+        font-size: 25px;
+        font-family: 'oxanium';
+        text-align: center;
+        color: orange;
+        margin-top: 6vh;
+       
+    }
+    
+    .degree_symbol_fclow {
+        font-size: 25px;
+        font-family: 'oxanium';
+        text-align: center;
+        color: tomato;
+        margin-top: -2vh;
+       
+    }
+    
+    
+      .weather-description {
+        font-size: 25px;
+        font-family: 'oxanium';
+        text-align: center;
+        color: rgb(248, 233, 144);
+        margin-top: 5vh;
+        
+        
+      }
+    
+    
+      #map {
+        width: 400px;
+        height: 450px;
+        background-position: center;
+        margin-top: 58vh;
+       position: -webkit-sticky;
+       
+        
+      }
+    
+    
+      .degree_symbol:not(:empty)::after {
+        content: "°";
+      }
+    
+    
+    .icon {
+        margin: auto;
+        margin-top: 1vh;
+        width: 100px;
+        height: 50px;
+        margin-bottom: 10vh;
         
     }
     
-    h35 {
-        color: black;
-        font-size: 70px;
+    h45 {
+        font-size: 65px;
         font-family: 'oxanium';
         text-align: center;
-        margin-top: -60vh;
-       
-        
+        color:  rgb(41, 2, 49);
+        border:  rgb(41, 2, 49) solid;
+        border-radius: 25px;
+        padding: 20px;
+        margin-left: 40vw;
+        height: 10vh;
     }
     
-    h36 {
-        color: black;
-        font-size: 70px;
-        font-family: 'oxanium';
-        text-align: center;
-        margin-top: -60vh;
-       
+    .hour-text {
+        margin-top: 7vh;
+        margin-bottom: -4vh;
         
     }
-
